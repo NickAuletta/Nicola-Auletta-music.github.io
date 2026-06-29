@@ -3,102 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicola Auletta | Parole, Note e Scena</title>
-
-    <!-- META TAG SEO ESSENZIALI -->
-    <meta name="description" content="Sito ufficiale di Nicola Auletta: autore, compositore, arrangiatore e regista teatrale. Laureato in Arte Scenica e docente presso la Village Music Academy.">
-    <meta name="keywords" content="Nicola Auletta, Nicola Auletta Musica, Nicola Auletta Teatro, Village Music Academy, Arte Scenica, Canzoni, Regia Scenica, La Teoria, Arrangiamenti">
-    <meta name="author" content="Nicola Auletta">
-    <meta name="robots" content="index, follow">
-
-    <!-- COSA APPARE SE CONDIVIDI IL SITO SU FACEBOOK / WHATSAPP (Open Graph) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nicola-auletta-music.github.io/">
-    <meta property="og:title" content="Nicola Auletta | Parole, Note e Scena">
-    <meta property="og:description" content="Autore, compositore e regista teatrale. Esplora le produzioni musicali e i progetti di regia scenica.">
-    <meta property="og:image" content="https://nicola-auletta-music.github.io/Nicola-auletta.jpg">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/cdn@3.4.1/src/index.min.js"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <title>Sito Ufficiale | Home</title>
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0d0d0d; }
-        .font-serif { font-family: 'Playfair Display', serif; }
+        /* Stili Generali */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Contenitore Principale */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Griglia delle Sezioni */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #1e3c72;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 10px;
+        }
+
+        /* Sezione Contatti */
+        .contact-section {
+            background: #fff;
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1e3c72;
+            color: #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2a5298;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            background-color: #222;
+            color: #bbb;
+            font-size: 0.9em;
+        }
     </style>
 </head>
-<body class="text-gray-300 antialiased selection:bg-amber-500 selection:text-black">
+<body>
 
-    <!-- HERO SECTION -->
-    <header class="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-transparent to-[#0d0d0d] px-4 py-16 overflow-hidden">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
-        
-        <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
-            <div class="text-center md:text-left order-2 md:order-1">
-                <span class="text-amber-500 tracking-widest uppercase text-sm font-semibold block mb-4">Songwriting · Composizione · Regia</span>
-                <h1 class="font-serif text-5xl md:text-7xl text-white font-bold leading-tight mb-6">Nicola Auletta</h1>
-                <p class="text-lg md:text-xl text-gray-400 font-light max-w-xl mx-auto md:mx-0 mb-10 leading-relaxed">
-                    "Plasmare le parole per dare voce ai silenzi, muovere le note per abitare la scena."
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#progetti" class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-black font-semibold rounded-full transition duration-300 shadow-lg text-center">Ascolta i Progetti</a>
-                    <a href="#contatti" class="px-8 py-3 border border-gray-700 hover:border-amber-500 text-white font-medium rounded-full transition duration-300 text-center">Mettiti in Contatto</a>
-                </div>
-            </div>
-
-            <!-- Foto Profilo -->
-            <div class="order-1 md:order-2 flex justify-center">
-                <div class="relative group">
-                    <img src="Nicola-auletta.jpg" alt="Nicola Auletta" class="relative z-10 w-72 h-72 md:w-96 md:h-96 object-cover rounded-2xl shadow-2xl border border-gray-800 object-top">
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1>Benvenuti nel mio Spazio Professionale</h1>
+        <p>Musica, Teatro e Coordinamento Organizzativo</p>
     </header>
 
-    <!-- BIOGRAFIA -->
-    <section id="biografia" class="py-24 px-4 max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-12 items-center">
-            <div class="md:col-span-1 text-center md:text-left">
-                <h2 class="font-serif text-3xl text-white font-bold mb-4 border-b-2 border-amber-500/30 pb-2 inline-block">Il Percorso</h2>
+    <div class="container">
+        
+        <div class="grid">
+            <!-- Colonna 1: Produzione Musicale -->
+            <div class="card">
+                <h2>Composizione & Songwriting</h2>
+                <p>Scrittura di testi originali, composizione di melodie e cura degli arrangiamenti musicali. Spazio dedicato alla creazione e allo sviluppo di progetti discografici e artistici, con lo sguardo rivolto al panorama musicale nazionale e internazionale.</p>
             </div>
-            <div class="md:col-span-2 space-y-6 text-gray-400 leading-relaxed text-lg font-light">
-                <p>Formatosi tra la rigida armonia della composizione musicale e l'espressività viscerale dell'Arte Scenica, Nicola Auletta unisce la scrittura cantautorale alla direzione teatrale.</p>
-                <p>Docente e arrangiatore, sposta costantemente i confini della propria produzione artistica, curando personalmente parole, arrangiamenti e visioni d'insieme.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- PROGETTI MUSICALI -->
-    <section id="progetti" class="py-24 bg-[#121212] px-4">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="font-serif text-4xl text-white font-bold mb-2">Creazioni & Visioni</h2>
+            <!-- Colonna 2: Regia e Teatro -->
+            <div class="card">
+                <h2>Direzione Teatrale</h2>
+                <p>Regia e allestimento di opere teatrali, con particolare attenzione alla valorizzazione della tradizione drammaturgica, allo studio dei testi e al coordinamento scenico degli attori per la messa in scena di spettacoli e rassegne.</p>
             </div>
-            
-            <!-- VIDEO -->
-            <div class="mb-16 bg-[#1a1a1a] p-6 rounded-2xl border border-gray-800 max-w-3xl mx-auto shadow-2xl">
-                <div class="relative w-full h-0 pb-[56.25%] rounded-xl overflow-hidden shadow-lg">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/LAKzCNNkaBo" title="Nicola Auletta - La Teoria" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="mt-6 text-center md:text-left md:flex justify-between items-center">
-                    <div>
-                        <span class="text-xs text-amber-500 font-semibold tracking-wider">Ultima Uscita</span>
-                        <h3 class="font-serif text-2xl text-white font-semibold mt-1">La Teoria</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CONTATTI -->
-    <section id="contatti" class="py-24 px-4 text-center">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="font-serif text-3xl md:text-4xl text-white font-bold mb-6">Collaboriamo a una nuova visione</h2>
-            <a href="mailto:aulettanico24@gmail.com" class="inline-block px-10 py-4 bg-white hover:bg-amber-500 text-black font-semibold rounded-full transition duration-300">Invia un'Email</a>
+            <!-- Colonna 3: Coordinamento e Management -->
+            <div class="card">
+                <h2>Organizzazione & Gestione</h2>
+                <p>Ottimizzazione delle risorse, pianificazione strategica di attività professionali e gestione dei flussi organizzativi. Massima precisione nel coordinamento di team complessi e nella pianificazione operativa di progetti sul territorio.</p>
+            </div>
         </div>
-    </section>
+
+        <!-- Sezione Contatti o Informazioni Aggiuntive -->
+        <div class="contact-section">
+            <h2>Collaborazioni e Progetti</h2>
+            <p>Sei interessato a sviluppare un progetto artistico, una produzione musicale o una collaborazione professionale?</p>
+            <a href="mailto:tuaimail@esempio.com" class="btn">Entra in Contatto</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Spazio Professionale. Tutti i diritti riservati.</p>
+    </footer>
 
 </body>
 </html>
