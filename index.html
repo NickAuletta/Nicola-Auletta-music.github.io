@@ -48,17 +48,36 @@
             padding: 0 30px;
         }
 
-        /* Sezione Biografia Bilingue */
-        .bio-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        /* Sezione Biografia con Foto Integrata */
+        .bio-wrapper {
             background: #ffffff;
             padding: 40px;
             border-radius: 4px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.02);
             margin-bottom: 50px;
             border-top: 3px solid #d4af37;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .bio-image-box {
+            flex: 0 0 280px; /* Larghezza fissa della foto su desktop */
+        }
+
+        .bio-image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: block;
+        }
+
+        .bio-content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
         }
 
         .bio-block h2 {
@@ -76,6 +95,7 @@
             color: #444;
             font-size: 0.95em;
             text-align: justify;
+            margin: 0;
         }
 
         /* Griglia Strutturale Macro Competenze */
@@ -230,6 +250,20 @@
             border-color: #11141a;
         }
 
+        /* Gestione Responsiva (Mobile) */
+        @media (max-width: 768px) {
+            .bio-wrapper {
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 20px;
+            }
+            .bio-image-box {
+                flex: 0 0 auto;
+                width: 220px;
+                margin-bottom: 20px;
+            }
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -252,18 +286,26 @@
 
     <div class="container">
         
-        <!-- SEZIONE BIOGRAFIA IN DOPPIA LINGUA (ITALIANO & INGLESE) -->
-        <div class="bio-container">
-            <!-- Blocco Italiano -->
-            <div class="bio-block">
-                <h2>Biografia</h2>
-                <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Laureato in Arte Scenica con il massimo dei voti e la lode presso l'Università degli Studi Suor Orsola Benincasa di Napoli, ha sviluppato una solida carriera eclettica che unisce la sensibilità della creazione musicale alla precisione della direzione teatrale e del management operativo. Docente presso la Village Music Academy (VMA), vanta prestigiose collaborazioni artistiche con grandi firme della musica italiana, tra cui spiccano i celebri autori Fabrizio Berlincioni e Vincenzo Capasso. Cura personalmente l'intera genesi delle sue opere, dalla stesura dei testi fino allo sviluppo delle melodie e degli arrangiamenti, orientando le proprie produzioni sia verso il panorama nazionale sia all'interno di network discografici internazionali.</p>
+        <!-- SEZIONE BIOGRAFIA CON FOTO PROFILO INSERITA -->
+        <div class="bio-wrapper">
+            <!-- Box Immagine -->
+            <div class="bio-image-box">
+                <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta">
             </div>
             
-            <!-- Blocco Inghlese -->
-            <div class="bio-block">
-                <h2>Biography</h2>
-                <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. Graduating with honors (110/110 e lode) in Scenic Arts from the Università degli Studi Suor Orsola Benincasa in Naples, he has developed a distinguished, multifaceted career that blends the sensitivity of musical creation with the precision of stage direction and operational management. A professor at the Village Music Academy (VMA), his portfolio includes prestigious artistic collaborations with leading figures in Italian music, most notably renowned authors Fabrizio Berlincioni and Vincenzo Capasso. He personally handles the entire genesis of his works, from writing lyrics to composing melodies and musical arrangements, positioning his productions within both the national scene and international record networks.</p>
+            <!-- Box Contenuto Bilingue -->
+            <div class="bio-content">
+                <!-- Blocco Italiano -->
+                <div class="bio-block">
+                    <h2>Biografia</h2>
+                    <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Laureato in Arte Scenica con il massimo dei voti e la lode presso l'Università degli Studi Suor Orsola Benincasa di Napoli, ha sviluppato una solida carriera eclettica che unisce la sensibilità della creazione musicale alla precisione della direzione teatrale e del management operativo. Docente presso la Village Music Academy (VMA), vanta prestigiose collaborazioni artistiche con grandi firme della musica italiana, tra cui spiccano i celebri autori Fabrizio Berlincioni e Vincenzo Capasso. Cura personalmente l'intera genesi delle sue opere, dalla stesura dei testi fino allo sviluppo delle melodie e degli arrangiamenti, orientando le proprie produzioni sia verso il panorama nazionale sia all'interno di network discografici internazionali.</p>
+                </div>
+                
+                <!-- Blocco Inglese -->
+                <div class="bio-block">
+                    <h2>Biography</h2>
+                    <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. Graduating with honors (110/110 e lode) in Scenic Arts from the Università degli Studi Suor Orsola Benincasa in Naples, he has developed a distinguished, multifaceted career that blends the sensitivity of musical creation with the precision of stage direction and operational management. A professor at the Village Music Academy (VMA), his portfolio includes prestigious artistic collaborations with leading figures in Italian music, most notably renowned authors Fabrizio Berlincioni and Vincenzo Capasso. He personally handles the entire genesis of his works, from writing lyrics to composing melodies and musical arrangements, positioning his productions within both the national scene and international record networks.</p>
+                </div>
             </div>
         </div>
 
@@ -285,7 +327,7 @@
             </div>
         </div>
 
-        <!-- SEZIONE CON I SOLI TRE BRANI UFFICIALI -->
+        <!-- SEZIONE BRANI CON I TRE BRANI UFFICIALI -->
         <div class="projects-section">
             <h2>Featured Releases</h2>
             <p>Ascolta le produzioni ufficiali direttamente su Spotify</p>
