@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- SEO AVANZATO: Distacco netto da altre identità omonime -->
     <title>Nicola Auletta | Official Site - Songwriter, Director & Instructor</title>
     <meta name="description" content="Sito ufficiale di Nicola Auletta: autore di musica d'autore, compositore contemporaneo, regista teatrale e docente presso la Village Music Academy. Laureato in Arte Scenica.">
     <meta name="keywords" content="Nicola Auletta, Nicola Auletta Autore, Nicola Auletta Regista, Nicola Auletta Canzoni, Nicola Auletta Teatro, Songwriting contemporaneo, Musica d'autore, Regia Teatrale, Art Garage Pozzuoli, Village Music Academy, Fabrizio Berlincioni, Vincenzo Capasso, Let's tear down the walls, Baila mi amor, La teoria, Teatro contemporaneo Napoli">
     <meta name="author" content="Nicola Auletta">
     <meta name="robots" content="index, follow">
 
+    <!-- OPEN GRAPH: Anteprime Social -->
     <meta property="og:title" content="Nicola Auletta | Official Portfolio">
     <meta property="og:description" content="Autore, compositore e regista teatrale contemporaneo. Master in Arti Sceniche presso l'Università Suor Orsola Benincasa.">
     <meta property="og:image" content="Nicola-auletta.jpg.JPEG">
     <meta property="og:url" content="https://nickauletta.github.io/Nicola-Auletta-music.github.io/">
     <meta property="og:type" content="profile">
 
+    <!-- STRADA A: SCHEMA MARKUP STRUTTURATO PER GOOGLE (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -214,26 +217,60 @@
         .project-buttons {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 900px;
+            gap: 25px;
+            max-width: 950px;
             margin: 0 auto;
         }
 
-        .btn-project {
+        .project-card {
+            background: #1a1e26;
+            border: 1px solid #d4af37;
+            border-radius: 4px;
+            padding: 20px;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.15);
+        }
+
+        .project-title {
+            font-size: 1.1em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .project-credits {
+            font-size: 0.8em;
+            color: #d4af37;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .btn-project {
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            background: #1a1e26;
+            background: transparent;
             color: #ffffff;
-            border: 1px solid #d4af37;
-            padding: 15px 20px;
+            border: 1px solid #ffffff;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.95em;
+            border-radius: 2px;
+            font-size: 0.85em;
             letter-spacing: 1px;
             font-weight: 500;
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 80%;
         }
 
         .btn-project::before {
@@ -241,18 +278,12 @@
             color: #d4af37;
             margin-right: 8px;
             font-size: 1.1em;
-            transition: all 0.3s ease;
         }
 
         .btn-project:hover {
             background: #d4af37;
             color: #11141a;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
-        }
-
-        .btn-project:hover::before {
-            color: #11141a;
+            border-color: #d4af37;
         }
 
         /* Sezione Contatto Lineare */
@@ -330,6 +361,7 @@
 </head>
 <body>
 
+    <!-- TESTATA INTERNAZIONALE CON SCRITTA IN CORNICE D'ORO -->
     <header>
         <div class="name-badge">
             <h1>Nicola Auletta</h1>
@@ -339,17 +371,22 @@
 
     <div class="container">
         
+        <!-- SEZIONE BIOGRAFIA -->
         <div class="bio-wrapper">
+            <!-- Box Immagine -->
             <div class="bio-image-box">
                 <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta" loading="lazy">
             </div>
             
+            <!-- Box Contenuto Bilingue -->
             <div class="bio-content">
+                <!-- Blocco Italiano -->
                 <div class="bio-block">
                     <h2>Biografia</h2>
-                    <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche (livello avanzato)" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. La sua solida formazione artistica si è consolidata frequentando vari laboratori teatrali a Napoli, tra cui spicca la rilevante esperienza professionale presso l'Art Garage di Pozzuoli sotto la guida di Cetty Sommella e Nando Paone. Docente presso la Village Music Academy (VMA), vanta prestigiose collaborazioni con grandi firme della musica italiana, come gli autori Fabrizio Berlincioni e Vincenzo Capasso. Cura personalmente l'intera genesi delle sue opere, dalla stesura dei testi fino allo sviluppo delle melodie e degli arrangiamenti, orientando le proprie produzioni sia verso il panorama nazionale sia all'interno di network discografici internazionali.</p>
+                    <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche (livello avanzato)" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. La sua solida formazione artistica si è consolidata frequentando vari laboratori teatrali a Napoli, tra cui spicca la rilevante experience professionale presso l'Art Garage di Pozzuoli sotto la guida di Cetty Sommella e Nando Paone. Docente presso la Village Music Academy (VMA), vanta prestigiose collaborazioni con grandi firme della musica italiana, come gli autori Fabrizio Berlincioni e Vincenzo Capasso. Cura personalmente l'intera genesi delle sue opere, dalla stesura dei testi fino allo sviluppo delle melodie e degli arrangiamenti, orientando le proprie produzioni sia verso il panorama nazionale sia all'interno di network discografici internazionali.</p>
                 </div>
                 
+                <!-- Blocco Inglese -->
                 <div class="bio-block">
                     <h2>Biography</h2>
                     <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. He earned a Master's degree (Master I livello) with honors in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche (livello avanzato)" from the Università degli Studi Suor Orsola Benincasa in Naples. His artistic training includes multiple theatre workshops in Naples, most notably a prominent residency at the Art Garage in Pozzuoli under the artistic direction of Cetty Sommella and Nando Paone. A professor at the Village Music Academy (VMA), his portfolio features collaborations with leading figures in Italian music, including renowned authors Fabrizio Berlincioni and Vincenzo Capasso. He personally handles the complete creation of his works, from lyric writing to melodies and musical arrangements, positioning his productions across both national and international record markets.</p>
@@ -357,6 +394,7 @@
             </div>
         </div>
 
+        <!-- LE TRE MACRO COMPETENZE -->
         <div class="grid">
             <div class="card">
                 <h2>Composizione & Scrittura</h2>
@@ -374,17 +412,36 @@
             </div>
         </div>
 
+        <!-- SEZIONE BRANI CON CREDITI ED URL AGGIORNATI -->
         <div class="projects-section">
             <h2>Featured Releases</h2>
             <p>Ascolta le produzioni ufficiali direttamente su Spotify</p>
             
             <div class="project-buttons">
-                <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=69270e7902574f6a" target="_blank" class="btn-project">Baila mi amor</a>
-                <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-project">La teoria</a>
-                <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=cbe1293dbd2d4693" target="_blank" class="btn-project">Let's tear down the walls</a>
+                <!-- Brano 1: Baila mi amor -->
+                <div class="project-card">
+                    <div class="project-title">Baila mi amor</div>
+                    <div class="project-credits">Autore e Compositore</div>
+                    <a href="https://open.spotify.com/intl-it/track/4dZgB1jWkKZesZMqaZUDEc?si=a1b38acd2f66434d" target="_blank" class="btn-project">Ascolta</a>
+                </div>
+
+                <!-- Brano 2: La teoria -->
+                <div class="project-card">
+                    <div class="project-title">La teoria</div>
+                    <div class="project-credits">Autore e Compositore</div>
+                    <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-project">Ascolta</a>
+                </div>
+
+                <!-- Brano 3: Let's tear down the walls -->
+                <div class="project-card">
+                    <div class="project-title">Let's tear down the walls</div>
+                    <div class="project-credits">Autore e Compositore</div>
+                    <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=cbe1293dbd2d4693" target="_blank" class="btn-project">Ascolta</a>
+                </div>
             </div>
         </div>
 
+        <!-- SEZIONE CONTATTI -->
         <div class="contact-section">
             <h2>Progetti e Sinergie Professionali</h2>
             <p>Per valutare collaborazioni artistiche, produzioni o consulenze organizzative.</p>
@@ -394,7 +451,7 @@
     </div>
 
     <footer>
-        <p>© 2026 Nicola Auletta. Tutti i diritti riservati.</p>
+        <p>&copy; 2026 Nicola Auletta. Tutti i diritti riservati.</p>
     </footer>
 
 </body>
