@@ -1,47 +1,45 @@
-# Nicola Auletta - Official Website
+# 🎭 Nicola Auletta — Parole, Note e Scena 🎼
 
-Questo repository contiene il codice sorgente del sito web ufficiale di **Nicola Auletta** (Artista, Compositore, Autore Completo e Regista Teatrale). Il sito è ottimizzato in ottica SEO e predisposto per la pubblicazione gratuita tramite GitHub Pages.
-
-## 🚀 Come Pubblicare il Sito in 2 Minuti (Gratis)
-
-Se non hai mai pubblicato un sito prima, segui questi semplici passaggi utilizzando questo repository:
-
-1. Accedi al tuo account **GitHub** (se non lo hai, crealo gratis su [github.com](https://github.com)).
-2. Crea un nuovo repository cliccando sul tasto **"+"** in alto a destra e selezionando **"New repository"**.
-3. Come nome del repository inserisci esattamente: `tuo-nome-utente.github.io` (sostituisci `tuo-nome-utente` con il nome reale del tuo account GitHub).
-4. Assicurati che il repository sia impostato su **Public**.
-5. Clicca su **"Create repository"**.
-6. Nella pagina successiva, clicca sul link **"uploading an existing file"** (carica un file esistente).
-7. Trascina all'interno della finestra il file `index.html` (e questo file `README.md` se desideri conservarlo come guida).
-8. Clicca sul pulsante verde in basso **"Commit changes"**.
-
-Il tuo sito sarà online e raggiungibile ovunque nel mondo all'indirizzo:  
-`https://tuo-nome-utente.github.io`
+Benvenuto nel repository ufficiale del mio spazio web: **[Nicola-Auletta-music.github.io](https://nicola-auletta-music.github.io/)**.  
+Questo progetto ospita la mia landing page artistica, un portfolio digitale minimale ed elegante progettato per raccontare la mia visione tra **songwriting, composizione musicale e regia teatrale**.
 
 ---
 
-## 🛠️ Struttura del Progetto
+## 📖 Chi Sono
 
-Il progetto è ridotto all'essenziale per garantire massima velocità di caricamento, assenza di costi di gestione e pulizia del codice:
+Sono un cantautore, compositore e regista teatrale. Il mio percorso artistico si sviluppa lungo due binari paralleli che si alimentano a vicenda: la parola scritta (che si fa drammaturgia o testo musicale) e il suono (che diventa arrangiamento o ritmo scenico). 
 
-* **`index.html`**: Il file principale che contiene la struttura del sito, la biografia bilingue ottimizzata (Italiano/Inglese), le sezioni Musica, Teatro e Contatti, oltre ai fogli di stile CSS incorporati (per evitare file esterni).
-* **`README.md`**: Questo file di istruzioni e documentazione tecnica.
+Laureato in **Arte Scenica** con il massimo dei voti e la lode presso l'Università degli Studi Suor Orsola Benincasa di Napoli, unisco lo studio della grande tradizione classica e del patrimonio teatrale in dialetto con la sperimentazione pop, cantautorale e orchestrale moderna. 
 
----
-
-## 📈 Ottimizzazione SEO & Dati Strutturati
-
-All'interno dell'head del file `index.html` è già stato integrato il codice **Schema Markup JSON-LD** di tipo `Person`. Questo blocco è invisibile agli utenti ma fondamentale per i motori di ricerca (Google, Bing), poiché:
-* Dichiara esplicitamente i ruoli professionali (*Composer, Songwriter, Theatre Director*).
-* Certifica i traguardi (Laurea in Arte Scenica e Premio Miglior Regia).
-* Collega semanticamente il sito ai futuri profili ufficiali di streaming (Spotify, YouTube, SoundCloud), accelerando l'indicizzazione e la creazione del **Google Knowledge Panel** dell'artista.
+Oltre all'attività di creazione e direzione, sono docente di canto e composizione presso la **Village Music Academy (VMA)** e collaboro come Project Manager a produzioni culturali e musicali indipendenti.
 
 ---
 
-## 📋 Note per gli Aggiornamenti Futuri
+## 🎨 Il Progetto Web
 
-* **Link Musicali (Streaming):** All'interno della sezione `#music`, sostituisci i segnaposto dei brani con i link ai tuoi player o alle tue playlist di SoundCloud/Spotify non appena saranno pronti.
-* **Modulo di Contatto:** Nella sezione `#contact`, sostituisci l'indirizzo email di esempio con la tua email reale per ricevere i pitch e le richieste di booking dai manager internazionali.
+Il sito è una vetrina dinamica e responsive incentrata sull'impatto visivo e sulla leggibilità:
+*   **Design "Teatro d'Ombre":** Un'interfaccia dark elegante con accenti caldi color ambra che richiamano l'atmosfera e le luci del palcoscenico.
+*   **Struttura Snella:** Sviluppato in un unico file `index.html` per garantire massima velocità di caricamento.
+*   **Tecnologie utilizzate:** HTML5, CSS3, **Tailwind CSS** (via CDN) e Google Fonts (*Playfair Display* e *Inter*).
 
 ---
-*Sviluppato in collaborazione strategica per il posizionamento digitale di Nicola Auletta — 2026.*
+
+## 🚀 Ambiti di Attività & Produzione
+
+*   **Songwriting & Melodic Composition:** Scrittura di testi, partiture melodiche e sviluppo di arrangiamenti originali per progetti solisti e per terzi, con un focus sul mercato italiano e internazionale.
+*   **Drammaturgia & Regia Teatrale:** Ideazione, riscrittura e direzione scenica di opere teatrali, commedie e spettacoli musicali, valorizzando l'espressività della lingua napoletana.
+*   **Formazione & Masterclass:** Didattica e consulenza per giovani artisti, interpreti e autori presso accademie musicali.
+
+---
+
+## 📬 Contatti e Collaborazioni
+
+Sono sempre aperto a nuove sinergie artistiche con etichette discografiche, produzioni teatrali, accademie e artisti indipendenti alla ricerca di una direzione artistica, di un arrangiamento o di un testo.
+
+*   **Sito Web:** [nicola-auletta-music.github.io](https://nicola-auletta-music.github.io/)
+*   **Insegnamento:** [Village Music Academy (VMA)](https://www.villagemusicacademy.it) *(o inserisci il link corretto)*
+
+---
+<p align="center">
+  <i>"Plasmare le parole per dare voce ai silenzi, muovere le note per abitare la scena."</i>
+</p>
