@@ -44,8 +44,33 @@
         /* Contenitore Principale */
         .container {
             max-width: 1000px;
-            margin: 50px auto;
+            margin: 40px auto;
             padding: 0 30px;
+        }
+
+        /* Sezione Biografia */
+        .bio-section {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            margin-bottom: 50px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .bio-section h2 {
+            margin-top: 0;
+            font-size: 1.4em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #11141a;
+        }
+
+        .bio-section p {
+            color: #444;
+            font-size: 1em;
+            text-align: justify;
         }
 
         /* Griglia Strutturale */
@@ -53,6 +78,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
+            margin-bottom: 50px;
         }
 
         .card {
@@ -85,11 +111,57 @@
             font-size: 0.95em;
         }
 
+        /* Sezione Brani / Progetti */
+        .projects-section {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .projects-section h2 {
+            font-size: 1.4em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #11141a;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .project-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-project {
+            display: inline-block;
+            background: #11141a;
+            color: #ffffff;
+            border: 1px solid #11141a;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 0.95em;
+            letter-spacing: 1px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-project:hover {
+            background: transparent;
+            color: #d4af37;
+            border-color: #d4af37;
+        }
+
         /* Sezione Contatto Lineare */
         .contact-section {
             background: #11141a;
             color: #fff;
-            margin-top: 60px;
             padding: 50px 30px;
             text-align: center;
             border-radius: 4px;
@@ -125,7 +197,7 @@
         footer {
             text-align: center;
             padding: 40px 20px;
-            margin-top: 80px;
+            margin-top: 60px;
             background-color: #0b0d10;
             color: #666;
             font-size: 0.85em;
@@ -135,7 +207,7 @@
 </head>
 <body>
 
-    <!-- TESTATA CON IL TUO NOME -->
+    <!-- TESTATA INTERNAZIONALE -->
     <header>
         <h1>Nicola Auletta</h1>
         <div class="subtitle">Songwriting • Stage Direction • Healthcare Management</div>
@@ -143,23 +215,38 @@
 
     <div class="container">
         
+        <!-- SEZIONE BIOGRAFIA AGGIORNATA CON LE GRANDI FIRME -->
+        <div class="bio-section">
+            <h2>Biography</h2>
+            <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Laureato in Arte Scenica con il massimo dei voti e la lode presso l'Università degli Studi Suor Orsola Benincasa di Napoli, ha sviluppato una solida carriera eclettica che unisce la sensibilità della creazione musicale alla precisione della direzione teatrale e del management operativo. Docente presso la Village Music Academy (VMA), vanta prestigiose collaborazioni artistiche con grandi firme della musica italiana, tra cui spiccano i celebri autori Fabrizio Berlincioni e Vincenzo Capasso. Cura personalmente l'intera genesi delle sue opere, dalla stesura dei testi fino allo sviluppo delle melodie e degli arrangiamenti, orientando le proprie produzioni sia verso il panorama nazionale sia all'interno di network discografici internazionali.</p>
+        </div>
+
+        <!-- LE TRE MACRO COMPETENZE -->
         <div class="grid">
-            <!-- Sezione 1 -->
             <div class="card">
                 <h2>Composizione & Scrittura</h2>
                 <p>Creazione completa di opere musicali inedite, curando personalmente la stesura dei testi, lo sviluppo delle linee melodiche e la direzione degli arrangiamenti. Un approccio strutturato che unisce ispirazione e visione discografica per il mercato nazionale e internazionale.</p>
             </div>
 
-            <!-- Sezione 2 -->
             <div class="card">
                 <h2>Direzione Teatrale</h2>
                 <p>Regia, allestimento scenico e cura della drammaturgia. Massima attenzione allo studio dei testi, all'espressività attoriale e al ritmo della messa in scena, mantenendo un profondo legame con la tradizione e l'innovazione teatrale.</p>
             </div>
 
-            <!-- Sezione 3 -->
             <div class="card">
                 <h2>Management Operativo</h2>
                 <p>Gestione organizzativa e pianificazione strategica di attività complesse. Ottimizzazione delle risorse, coordinamento di team operativi sul territorio, cura dei protocolli di sicurezza e gestione efficiente dei flussi di lavoro.</p>
+            </div>
+        </div>
+
+        <!-- SEZIONE BRANI / COMPOSIZIONI CON LINK SPOTIFY ATTIVI -->
+        <div class="projects-section">
+            <h2>Featured Releases</h2>
+            <p style="color: #666; margin-bottom: 25px;">Ascolta le produzioni ufficiali direttamente su Spotify:</p>
+            <div class="project-buttons">
+                <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=69270e7902574f6a" target="_blank" class="btn-project">Baila mi amor</a>
+                <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-project">La teoria</a>
+                <a href="https://open.spotify.com/intl-it/track/4dZgB1jWkKZesZMqaZUDEc?si=b0adfb3b57f24cfb" target="_blank" class="btn-project">Featured Track</a>
             </div>
         </div>
 
