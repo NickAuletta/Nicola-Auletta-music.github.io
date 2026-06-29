@@ -43,37 +43,42 @@
 
         /* Contenitore Principale */
         .container {
-            max-width: 1000px;
+            max-width: 1050px;
             margin: 40px auto;
             padding: 0 30px;
         }
 
-        /* Sezione Biografia */
-        .bio-section {
+        /* Sezione Biografia Bilingue */
+        .bio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             background: #ffffff;
             padding: 40px;
             border-radius: 4px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.02);
             margin-bottom: 50px;
-            border-left: 4px solid #d4af37;
+            border-top: 3px solid #d4af37;
         }
 
-        .bio-section h2 {
+        .bio-block h2 {
             margin-top: 0;
-            font-size: 1.4em;
+            font-size: 1.3em;
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #11141a;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 10px;
         }
 
-        .bio-section p {
+        .bio-block p {
             color: #444;
-            font-size: 1em;
+            font-size: 0.95em;
             text-align: justify;
         }
 
-        /* Griglia Strutturale */
+        /* Griglia Strutturale Macro Competenze */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -111,86 +116,118 @@
             font-size: 0.95em;
         }
 
-        /* Sezione Brani / Progetti */
+        /* Sezione Brani / Progetti Premium */
         .projects-section {
-            background: #ffffff;
-            padding: 40px 30px;
+            background: #11141a;
+            color: #fff;
+            padding: 50px 30px;
             border-radius: 4px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
             text-align: center;
             margin-bottom: 50px;
+            border-bottom: 2px solid #d4af37;
         }
 
         .projects-section h2 {
-            font-size: 1.4em;
-            font-weight: 600;
-            letter-spacing: 1px;
+            font-size: 1.5em;
+            font-weight: 300;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            color: #11141a;
+            color: #ffffff;
             margin-top: 0;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+
+        .projects-section p {
+            color: #a0a5b0;
+            font-size: 0.95em;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
         }
 
         .project-buttons {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .btn-project {
-            display: inline-block;
-            background: #11141a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1a1e26;
             color: #ffffff;
-            border: 1px solid #11141a;
-            padding: 12px 30px;
+            border: 1px solid #d4af37;
+            padding: 15px 20px;
             text-decoration: none;
-            border-radius: 2px;
+            border-radius: 4px;
             font-size: 0.95em;
             letter-spacing: 1px;
             font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .btn-project::before {
+            content: "♫ ";
+            color: #d4af37;
+            margin-right: 8px;
+            font-size: 1.1em;
             transition: all 0.3s ease;
         }
 
         .btn-project:hover {
-            background: transparent;
-            color: #d4af37;
-            border-color: #d4af37;
+            background: #d4af37;
+            color: #11141a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-project:hover::before {
+            color: #11141a;
         }
 
         /* Sezione Contatto Lineare */
         .contact-section {
-            background: #11141a;
-            color: #fff;
+            background: #ffffff;
+            color: #11141a;
             padding: 50px 30px;
             text-align: center;
             border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            border: 1px solid #eef2f5;
         }
 
         .contact-section h2 {
-            font-weight: 300;
+            font-weight: 600;
             letter-spacing: 1px;
             margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.4em;
         }
 
         .btn {
             display: inline-block;
-            background: transparent;
-            color: #d4af37;
-            border: 1px solid #d4af37;
-            padding: 12px 35px;
+            background: #11141a;
+            color: #fff;
+            border: 1px solid #11141a;
+            padding: 14px 40px;
             text-decoration: none;
             border-radius: 2px;
             margin-top: 20px;
             font-size: 0.9em;
             letter-spacing: 2px;
             text-transform: uppercase;
+            font-weight: 600;
             transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background: #d4af37;
+            background: transparent;
             color: #11141a;
+            border-color: #11141a;
         }
 
         /* Footer */
@@ -215,10 +252,19 @@
 
     <div class="container">
         
-        <!-- SEZIONE BIOGRAFIA AGGIORNATA CON LE GRANDI FIRME -->
-        <div class="bio-section">
-            <h2>Biography</h2>
-            <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Laureato in Arte Scenica con il massimo dei voti e la lode presso l'Università degli Studi Suor Orsola Benincasa di Napoli, ha sviluppato una solida carriera eclettica che unisce la sensibilità della creazione musicale alla precisione della direzione teatrale e del management operativo. Docente presso la Village Music Academy (VMA), vanta prestigiose collaborazioni artistiche con grandi firme della musica italiana, tra cui spiccano i celebri autori Fabrizio Berlincioni e Vincenzo Capasso. Cura personalmente l'intera genesi delle sue opere, dalla stesura dei testi fino allo sviluppo delle melodie e degli arrangiamenti, orientando le proprie produzioni sia verso il panorama nazionale sia all'interno di network discografici internazionali.</p>
+        <!-- SEZIONE BIOGRAFIA IN DOPPIA LINGUA (ITALIANO & INGLESE) -->
+        <div class="bio-container">
+            <!-- Blocco Italiano -->
+            <div class="bio-block">
+                <h2>Biografia</h2>
+                <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Laureato in Arte Scenica con il massimo dei voti e la lode presso l'Università degli Studi Suor Orsola Benincasa di Napoli, ha sviluppato una solida carriera eclettica che unisce la sensibilità della creazione musicale alla precisione della direzione teatrale e del management operativo. Docente presso la Village Music Academy (VMA), vanta prestigiose collaborazioni artistiche con grandi firme della musica italiana, tra cui spiccano i celebri autori Fabrizio Berlincioni e Vincenzo Capasso. Cura personalmente l'intera genesi delle sue opere, dalla stesura dei testi fino allo sviluppo delle melodie e degli arrangiamenti, orientando le proprie produzioni sia verso il panorama nazionale sia all'interno di network discografici internazionali.</p>
+            </div>
+            
+            <!-- Blocco Inghlese -->
+            <div class="bio-block">
+                <h2>Biography</h2>
+                <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. Graduating with honors (110/110 e lode) in Scenic Arts from the Università degli Studi Suor Orsola Benincasa in Naples, he has developed a distinguished, multifaceted career that blends the sensitivity of musical creation with the precision of stage direction and operational management. A professor at the Village Music Academy (VMA), his portfolio includes prestigious artistic collaborations with leading figures in Italian music, most notably renowned authors Fabrizio Berlincioni and Vincenzo Capasso. He personally handles the entire genesis of his works, from writing lyrics to composing melodies and musical arrangements, positioning his productions within both the national scene and international record networks.</p>
+            </div>
         </div>
 
         <!-- LE TRE MACRO COMPETENZE -->
@@ -239,14 +285,15 @@
             </div>
         </div>
 
-        <!-- SEZIONE BRANI / COMPOSIZIONI CON LINK SPOTIFY ATTIVI -->
+        <!-- SEZIONE CON I SOLI TRE BRANI UFFICIALI -->
         <div class="projects-section">
             <h2>Featured Releases</h2>
-            <p style="color: #666; margin-bottom: 25px;">Ascolta le produzioni ufficiali direttamente su Spotify:</p>
+            <p>Ascolta le produzioni ufficiali direttamente su Spotify</p>
+            
             <div class="project-buttons">
                 <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=69270e7902574f6a" target="_blank" class="btn-project">Baila mi amor</a>
                 <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-project">La teoria</a>
-                <a href="https://open.spotify.com/intl-it/track/4dZgB1jWkKZesZMqaZUDEc?si=b0adfb3b57f24cfb" target="_blank" class="btn-project">Featured Track</a>
+                <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=cbe1293dbd2d4693" target="_blank" class="btn-project">Let's tear down the wall</a>
             </div>
         </div>
 
@@ -254,7 +301,7 @@
         <div class="contact-section">
             <h2>Progetti e Sinergie Professionali</h2>
             <p>Per valutare collaborazioni artistiche, produzioni o consulenze organizzative.</p>
-            <a href="mailto:pressnicoautore@gmail.com" class="btn">Invia una Richiesta</a>
+            <a href="mailto:pressnicoautore@gmail.com" class="btn">Invia una Richiesta / Contact Me</a>
         </div>
 
     </div>
