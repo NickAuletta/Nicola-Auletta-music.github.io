@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nickauletta.github.io/Nicola-Auletta-music.github.io/sitemap.xml
