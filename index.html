@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO BASE: Titolo e Descrizione per i motori di ricerca -->
-    <title>Nicola Auletta | Official Portfolio & Site</title>
-    <meta name="description" content="Sito ufficiale di Nicola Auletta: autore, compositore, regista teatrale e docente presso la Village Music Academy. Scopri le produzioni musicali e i progetti teatrali.">
-    <meta name="keywords" content="Nicola Auletta, Songwriting, Stage Direction, Regia Teatrale, Art Garage Pozzuoli, Village Music Academy, Fabrizio Berlincioni, Vincenzo Capasso, Let's tear down the walls, Baila mi amor, La teoria, Teatro Napoli">
+    <!-- SEO AVANZATO: Distacco netto da altre identità omonime -->
+    <title>Nicola Auletta | Official Site - Songwriter, Director & Instructor</title>
+    <meta name="description" content="Sito ufficiale di Nicola Auletta: autore di musica d'autore, compositore contemporaneo, regista teatrale e docente presso la Village Music Academy. Laureato in Arte Scenica.">
+    <meta name="keywords" content="Nicola Auletta, Nicola Auletta Autore, Nicola Auletta Regista, Nicola Auletta Canzoni, Nicola Auletta Teatro, Songwriting contemporaneo, Musica d'autore, Regia Teatrale, Art Garage Pozzuoli, Village Music Academy, Fabrizio Berlincioni, Vincenzo Capasso, Let's tear down the walls, Baila mi amor, La teoria, Teatro contemporaneo Napoli">
     <meta name="author" content="Nicola Auletta">
     <meta name="robots" content="index, follow">
 
-    <!-- OPEN GRAPH: Anteprime per WhatsApp, Facebook, LinkedIn -->
+    <!-- OPEN GRAPH: Anteprime Social -->
     <meta property="og:title" content="Nicola Auletta | Official Portfolio">
-    <meta property="og:description" content="Autore, compositore e regista teatrale. Master in Arti Sceniche presso l'Università Suor Orsola Benincasa.">
+    <meta property="og:description" content="Autore, compositore e regista teatrale contemporaneo. Master in Arti Sceniche presso l'Università Suor Orsola Benincasa.">
     <meta property="og:image" content="Nicola-auletta.jpg.JPEG">
     <meta property="og:url" content="https://nickauletta.github.io/Nicola-Auletta-music.github.io/">
     <meta property="og:type" content="profile">
-
-    <!-- TWITTER CARD: Anteprime per X/Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nicola Auletta | Official Portfolio">
-    <meta name="twitter:description" content="Autore, compositore e regista teatrale. Scopri le produzioni ufficiali su Spotify.">
-    <meta name="twitter:image" content="Nicola-auletta.jpg.JPEG">
 
     <style>
         /* Stili Generali e Palette Internazionale */
@@ -35,25 +29,38 @@
             line-height: 1.7;
         }
 
-        /* Header Professionale Scuro e Oro */
+        /* Header Professionale Scuro con Cornice e Bordi d'Oro */
         header {
             background: #11141a; 
             color: #ffffff;
-            padding: 90px 20px;
+            padding: 100px 20px;
             text-align: center;
             border-bottom: 3px solid #d4af37; 
+        }
+
+        /* Il box con i bordi d'oro intorno al nome */
+        .name-badge {
+            display: inline-block;
+            border: 2px solid #d4af37;
+            padding: 15px 40px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            background: rgba(26, 30, 38, 0.5);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
         }
 
         header h1 {
             margin: 0;
             font-size: 2.8em;
             font-weight: 300;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
 
         header .subtitle {
-            margin: 18px 0 0 0;
+            margin: 10px 0 0 0;
             font-size: 1.05em;
             font-weight: 400;
             letter-spacing: 4px;
@@ -282,6 +289,12 @@
                 width: 240px;
                 margin-bottom: 25px;
             }
+            header h1 {
+                font-size: 2.2em;
+            }
+            .name-badge {
+                padding: 10px 25px;
+            }
         }
 
         /* Footer */
@@ -298,17 +311,19 @@
 </head>
 <body>
 
-    <!-- TESTATA INTERNAZIONALE -->
+    <!-- TESTATA INTERNAZIONALE CON SCRITTA IN CORNICE D'ORO -->
     <header>
-        <h1>Nicola Auletta</h1>
+        <div class="name-badge">
+            <h1>Nicola Auletta</h1>
+        </div>
         <div class="subtitle">Songwriting • Stage Direction • Healthcare Management</div>
     </header>
 
     <div class="container">
         
-        <!-- SEZIONE BIOGRAFIA CON LAZY LOADING ATTIVO SULLA FOTO -->
+        <!-- SEZIONE BIOGRAFIA -->
         <div class="bio-wrapper">
-            <!-- Box Immagine Ottimizzata -->
+            <!-- Box Immagine -->
             <div class="bio-image-box">
                 <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta" loading="lazy">
             </div>
