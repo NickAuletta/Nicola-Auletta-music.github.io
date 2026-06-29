@@ -3,149 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito Ufficiale | Home</title>
+    <title>Portfolio Professionale</title>
     <style>
-        /* Stili Generali */
+        /* Stili Generali e Palette Internazionale */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
+            background-color: #fafdff; /* Sfondo chiaro e pulito */
+            color: #1a1a1a;
+            line-height: 1.7;
         }
 
+        /* Header Professionale Scuro e Oro */
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #fff;
-            padding: 60px 20px;
+            background: #11141a; /* Antracite Scuro */
+            color: #ffffff;
+            padding: 80px 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #d4af37; /* Dettaglio Oro */
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.8em;
-            font-weight: 700;
-            letter-spacing: 1px;
+            font-size: 2.6em;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
-        header p {
-            margin: 10px 0 0 0;
-            font-size: 1.2em;
-            opacity: 0.9;
+        header .subtitle {
+            margin: 15px 0 0 0;
+            font-size: 1.1em;
+            font-weight: 400;
+            letter-spacing: 3px;
+            color: #d4af37; /* Oro per il sottotitolo */
+            text-transform: uppercase;
         }
 
         /* Contenitore Principale */
         .container {
             max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
+            margin: 50px auto;
+            padding: 0 30px;
         }
 
-        /* Griglia delle Sezioni */
+        /* Griglia Strutturale */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
+            gap: 40px;
         }
 
         .card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border-top: 2px solid #eef2f5;
+            transition: all 0.3s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-top: 2px solid #d4af37;
         }
 
         .card h2 {
             margin-top: 0;
-            color: #1e3c72;
-            border-bottom: 2px solid #f0f2f5;
-            padding-bottom: 10px;
+            font-size: 1.3em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #11141a;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
         }
 
-        /* Sezione Contatti */
+        .card p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        /* Sezione Contatto Lineare */
         .contact-section {
-            background: #fff;
-            margin-top: 40px;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background: #11141a;
+            color: #fff;
+            margin-top: 60px;
+            padding: 50px 30px;
             text-align: center;
+            border-radius: 4px;
+        }
+
+        .contact-section h2 {
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-top: 0;
         }
 
         .btn {
             display: inline-block;
-            background: #1e3c72;
-            color: #fff;
-            padding: 10px 25px;
+            background: transparent;
+            color: #d4af37;
+            border: 1px solid #d4af37;
+            padding: 12px 35px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
-            transition: background 0.3s ease;
+            border-radius: 2px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background: #2a5298;
+            background: #d4af37;
+            color: #11141a;
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
-            background-color: #222;
-            color: #bbb;
-            font-size: 0.9em;
+            padding: 40px 20px;
+            margin-top: 80px;
+            background-color: #0b0d10;
+            color: #666;
+            font-size: 0.85em;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
+    <!-- PASSO 1: TESTATA PERSONALIZZATA -->
     <header>
-        <h1>Benvenuti nel mio Spazio Professionale</h1>
-        <p>Musica, Teatro e Coordinamento Organizzativo</p>
+        <h1>Spazio Professionale</h1>
+        <div class="subtitle">Produzione Artistica & Coordinamento Operativo</div>
     </header>
 
     <div class="container">
         
         <div class="grid">
-            <!-- Colonna 1: Produzione Musicale -->
+            <!-- Sezione 1 -->
             <div class="card">
-                <h2>Composizione & Songwriting</h2>
-                <p>Scrittura di testi originali, composizione di melodie e cura degli arrangiamenti musicali. Spazio dedicato alla creazione e allo sviluppo di progetti discografici e artistici, con lo sguardo rivolto al panorama musicale nazionale e internazionale.</p>
+                <h2>Composizione & Scrittura</h2>
+                <p>Creazione di opere musicali inedite attraverso la stesura dei testi, lo sviluppo delle linee melodiche e la direzione degli arrangiamenti. Un approccio che unisce l'ispirazione artistica alla cura della struttura discografica per il mercato nazionale e internazionale.</p>
             </div>
 
-            <!-- Colonna 2: Regia e Teatro -->
+            <!-- Sezione 2 -->
             <div class="card">
                 <h2>Direzione Teatrale</h2>
-                <p>Regia e allestimento di opere teatrali, con particolare attenzione alla valorizzazione della tradizione drammaturgica, allo studio dei testi e al coordinamento scenico degli attori per la messa in scena di spettacoli e rassegne.</p>
+                <p>Regia, allestimento scenico e cura della drammaturgia. Massima attenzione allo studio dei testi, all'espressività attoriale e al ritmo della messa in scena, mantenendo un profondo legame con la tradizione e l'innovazione teatrale.</p>
             </div>
 
-            <!-- Colonna 3: Coordinamento e Management -->
+            <!-- Sezione 3 -->
             <div class="card">
-                <h2>Organizzazione & Gestione</h2>
-                <p>Ottimizzazione delle risorse, pianificazione strategica di attività professionali e gestione dei flussi organizzativi. Massima precisione nel coordinamento di team complessi e nella pianificazione operativa di progetti sul territorio.</p>
+                <h2>Management Operativo</h2>
+                <p>Gestione organizzativa e pianificazione strategica di attività professionali complesse. Ottimizzazione delle risorse, coordinamento di team operativi sul territorio, stesura di protocolli e gestione efficiente dei flussi di lavoro.</p>
             </div>
         </div>
 
-        <!-- Sezione Contatti o Informazioni Aggiuntive -->
         <div class="contact-section">
-            <h2>Collaborazioni e Progetti</h2>
-            <p>Sei interessato a sviluppare un progetto artistico, una produzione musicale o una collaborazione professionale?</p>
-            <a href="mailto:tuaimail@esempio.com" class="btn">Entra in Contatto</a>
+            <h2>Progetti e Sinergie Professionali</h2>
+            <p>Per valutare collaborazioni artistiche, produzioni musicali o consulenze organizzative.</p>
+            <a href="mailto:info@esempio.com" class="btn">Invia una Richiesta</a>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Spazio Professionale. Tutti i diritti riservati.</p>
+        <p>&copy; 2026 Ufficio Produzione. Tutti i diritti riservati.</p>
     </footer>
 
 </body>
