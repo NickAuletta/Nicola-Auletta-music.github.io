@@ -54,11 +54,11 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Navigazione Professionale Scura */
+        /* Navigazione Professionale Integrata */
         nav {
-            background: #080a0d; 
+            background: #090b0e; 
             text-align: center; 
-            padding: 18px 0; 
+            padding: 20px 0; 
             border-bottom: 1px solid #232b38;
             position: sticky;
             top: 0;
@@ -66,14 +66,14 @@
         }
 
         nav a {
-            color: #ffffff; 
+            color: #94a3b8; 
             margin: 0 25px; 
             text-decoration: none; 
             font-weight: 500; 
             font-size: 0.85em; 
             letter-spacing: 2px; 
             text-transform: uppercase;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
         }
 
         nav a.active, nav a:hover {
@@ -81,12 +81,12 @@
         }
 
         header {
-            background: #0d1015; 
+            background: #090b0e; 
             color: #ffffff;
             padding: 100px 20px;
             text-align: center;
-            border-bottom: 4px solid #d4af37; 
-            box-shadow: inset 0 -10px 30px rgba(0,0,0,0.3);
+            border-bottom: 3px solid #d4af37; 
+            box-shadow: inset 0 -10px 30px rgba(0,0,0,0.5);
         }
 
         .name-badge {
@@ -96,7 +96,7 @@
             border-image-slice: 1;
             padding: 18px 45px;
             margin-bottom: 25px;
-            background: rgba(17, 20, 26, 0.8);
+            background: #161920;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
@@ -125,14 +125,17 @@
             padding: 0 25px;
         }
 
-        /* Blocchi Interni a Contrasto Scuro */
+        /* COMPROMESSO ELEGANTE: Box Grigio Antracite scuro e morbido (Niente più Bianco) */
         .content-block {
-            background: #0d1015;
+            background: #1a1e26;
             padding: 50px;
             border-radius: 6px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.4);
             margin-bottom: 60px;
-            border-top: 4px solid #d4af37;
+            border-top: 3px solid #d4af37;
+            border-left: 1px solid #252b36;
+            border-right: 1px solid #252b36;
+            border-bottom: 1px solid #252b36;
         }
 
         .bio-wrapper {
@@ -143,15 +146,17 @@
 
         .bio-image-box {
             flex: 0 0 300px; 
+            border: 1px solid #2d3545;
+            padding: 5px;
+            background: #11141a;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.6);
         }
 
         .bio-image-box img {
             width: 100%;
             height: auto;
-            border-radius: 4px;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+            border-radius: 2px;
             display: block;
-            border: 1px solid #232b38;
         }
 
         .bio-content {
@@ -166,17 +171,19 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.6em;
             font-weight: 600;
-            color: #ffffff;
-            border-bottom: 2px solid #232b38;
+            color: #d4af37; /* Titoli in Oro Satinato */
+            border-bottom: 1px solid #2d3545;
             padding-bottom: 12px;
+            letter-spacing: 0.5px;
         }
 
-        /* Testo in Bianco Puro */
+        /* Testo descrittivo in Bianco Puro ad alta leggibilità */
         .bio-block p, .card p, .contact-section p {
             color: #ffffff !important;
             font-size: 0.98em;
             text-align: justify;
             font-weight: 400;
+            line-height: 1.9;
         }
 
         .grid {
@@ -186,19 +193,22 @@
             margin-bottom: 60px;
         }
 
+        /* Schede Competenze in Grigio Antracite */
         .card {
-            background: #0d1015;
+            background: #1a1e26;
             padding: 45px 35px;
             border-radius: 6px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-            border-top: 3px solid #232b38;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border: 1px solid #252b36;
+            border-top: 3px solid #2d3545;
             transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
             border-top: 3px solid #d4af37;
+            border-color: #2d3545;
         }
 
         .card h2 {
@@ -206,19 +216,20 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.35em;
             font-weight: 600;
-            color: #ffffff;
+            color: #d4af37; /* Titoli Schede in Oro */
             padding-bottom: 15px;
-            border-bottom: 1px solid #232b38;
+            border-bottom: 1px solid #2d3545;
         }
 
+        /* Box Contatti in Grigio Antracite */
         .contact-section {
-            background: #0d1015;
+            background: #1a1e26;
             color: #ffffff;
             padding: 60px 40px;
             text-align: center;
             border-radius: 6px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            border: 1px solid #232b38;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+            border: 1px solid #252b36;
             border-top: 4px solid #d4af37;
         }
 
@@ -227,15 +238,16 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            margin-top: 25px;
+            margin-top: 30px;
         }
 
+        /* Pulsanti d'Impatto */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             background: #ffffff;
-            color: #0d1015;
+            color: #090b0e;
             border: 2px solid #ffffff;
             padding: 15px 40px;
             text-decoration: none;
@@ -255,18 +267,19 @@
 
         .btn-social {
             background: transparent;
-            color: #ffffff;
-            border: 2px solid #333f52;
+            color: #d4af37;
+            border: 2px solid #d4af37;
         }
 
         .btn-social:hover {
-            border-color: #ffffff;
-            background: rgba(255, 255, 255, 0.05);
+            background: #d4af37;
+            color: #090b0e;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.3);
         }
 
         @media (max-width: 992px) {
-            .bio-wrapper { flex-direction: column; align-items: center; padding: 0; }
-            .content-block { padding: 35px 25px; }
+            .bio-wrapper { flex-direction: column; align-items: center; }
+            .content-block { padding: 40px 25px; }
             .bio-image-box { flex: 0 0 auto; width: 240px; margin-bottom: 30px; }
             header h1 { font-size: 2.4em; }
             .social-buttons-container { flex-direction: column; align-items: center; width: 100%; }
@@ -274,7 +287,7 @@
         }
 
         footer {
-            text-align: center; padding: 45px 20px; background-color: #080a0d; color: #525a66; font-size: 0.82em; border-top: 1px solid #141921;
+            text-align: center; padding: 45px 20px; background-color: #090b0e; color: #4e5766; font-size: 0.82em; border-top: 1px solid #1a1e26;
         }
     </style>
 </head>
@@ -295,7 +308,7 @@
 
     <div class="container">
         
-        <!-- BIOGRAFIA IN BLOCCO SCURO CON SCRITTURE BIANCHE -->
+        <!-- BIOGRAFIA IN BLOCCO ANTRACITE E SCRITTA BIANCA -->
         <div class="content-block">
             <div class="bio-wrapper">
                 <div class="bio-image-box">
@@ -304,7 +317,7 @@
                 <div class="bio-content">
                     <div class="bio-block">
                         <h2>Biografia</h2>
-                        <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Sviluppa e coordina progetti che collegano la sensibilità artistica musicale e l'espressività scenica, integrando competenze di gestione organizzativa e direzionale.</p>
+                        <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche" presso l'Università degli Studi Suor Olsola Benincasa di Napoli. Sviluppa e coordina progetti che collegano la sensibilità artistica musicale e l'espressività scenica, integrando competenze di gestione organizzativa e direzionale.</p>
                     </div>
                     <div class="bio-block">
                         <h2>Biography</h2>
@@ -314,7 +327,7 @@
             </div>
         </div>
 
-        <!-- LE TRE SCHEDE SCHERMATE -->
+        <!-- LE TRE CARTE DI COMPETENZA -->
         <div class="grid">
             <div class="card">
                 <h2>Composizione & Scrittura</h2>
@@ -330,7 +343,7 @@
             </div>
         </div>
 
-        <!-- AREA CONTATTI E SOCIAL -->
+        <!-- HUB CONTATTI SOCIAL E EMAIL -->
         <div class="contact-section">
             <h2>Progetti e Sinergie Professionali</h2>
             <p>Segui i canali ufficiali per aggiornamenti sulle produzioni, per valutare collaborazioni o inoltrare richieste lavorative.</p>
