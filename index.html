@@ -48,47 +48,45 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fdfbf7; 
-            color: #2d3139;
+            background-color: #f7fafc; 
+            color: #1e2229;
             line-height: 1.8;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Navigazione d'Oro e di Notte */
+        /* Navigazione Professionale originale */
         nav {
-            background: #0d1015; 
+            background: #080a0d; 
             text-align: center; 
-            padding: 20px 0; 
-            border-bottom: 2px solid #d4af37;
+            padding: 18px 0; 
+            border-bottom: 1px solid #232b38;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
         nav a {
-            color: #f5f5f7; 
+            color: #ffffff; 
             margin: 0 25px; 
             text-decoration: none; 
             font-weight: 500; 
             font-size: 0.85em; 
             letter-spacing: 2px; 
             text-transform: uppercase;
-            transition: all 0.3s ease;
+            transition: color 0.3s;
         }
 
         nav a.active, nav a:hover {
             color: #d4af37;
-            text-shadow: 0 0 8px rgba(212,175,55,0.4);
         }
 
         header {
             background: #0d1015; 
             color: #ffffff;
-            padding: 110px 20px 70px 20px;
+            padding: 100px 20px;
             text-align: center;
-            border-bottom: 5px solid #b38728; 
-            box-shadow: inset 0 -25px 60px rgba(0,0,0,0.4);
+            border-bottom: 4px solid #d4af37; 
+            box-shadow: inset 0 -10px 30px rgba(0,0,0,0.3);
         }
 
         .name-badge {
@@ -96,93 +94,58 @@
             border: 2px solid transparent;
             border-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
             border-image-slice: 1;
-            padding: 20px 50px;
+            padding: 18px 45px;
             margin-bottom: 25px;
-            background: rgba(17, 20, 26, 0.95);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            background: rgba(17, 20, 26, 0.8);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         header h1 {
             margin: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 3.6em;
+            font-size: 3.2em;
             font-weight: 400;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             color: #ffffff;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
 
         header .subtitle {
-            margin: 20px 0 0 0;
-            font-size: 0.9em;
+            margin: 15px 0 0 0;
+            font-size: 0.95em;
             font-weight: 500;
-            letter-spacing: 6px;
+            letter-spacing: 5px;
             color: #d4af37; 
             text-transform: uppercase;
         }
 
-        /* Hub Social Alto */
-        .top-social-hub {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .social-badge-link {
-            color: #d4af37;
-            text-decoration: none;
-            font-size: 0.75em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            border: 1px solid #b38728;
-            padding: 8px 22px;
-            background: rgba(0, 0, 0, 0.3);
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .social-badge-link:hover {
-            background: #d4af37;
-            color: #0d1015;
-            box-shadow: 0 0 15px rgba(212,175,55,0.4);
-        }
-
         .container {
             max-width: 1100px;
-            margin: 60px auto;
+            margin: 50px auto;
             padding: 0 25px;
         }
 
-        /* Blocchi Contenuto con Scrittura Bianca e Contorno Oro */
-        .content-block {
-            background: #0d1015;
-            padding: 55px;
-            border-radius: 4px;
-            box-shadow: 0 10px 35px rgba(180,160,130,0.15);
-            margin-bottom: 50px;
-            border: 2px solid #d4af37; /* Contorno oro integrale */
-        }
-
         .bio-wrapper {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 6px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.03);
+            margin-bottom: 60px;
+            border-top: 4px solid #d4af37;
             display: flex;
             gap: 50px;
             align-items: flex-start;
         }
 
         .bio-image-box {
-            flex: 0 0 320px; 
-            border: 2px solid transparent;
-            border-image: linear-gradient(to bottom, #bf953f, #fcf6ba, #aa771c);
-            border-image-slice: 1;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            flex: 0 0 300px; 
         }
 
         .bio-image-box img {
             width: 100%;
             height: auto;
+            border-radius: 4px;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.09);
             display: block;
         }
 
@@ -193,142 +156,77 @@
             gap: 40px;
         }
 
-        .bio-block h2, .content-block h2 {
+        .bio-block h2 {
             margin-top: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 1.9em;
+            font-size: 1.6em;
             font-weight: 600;
-            color: #d4af37; /* Titoli Oro per risaltare sul nero */
-            border-bottom: 2px solid #232b38;
-            padding-bottom: 15px;
-            letter-spacing: 0.5px;
+            color: #0d1015;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 12px;
         }
 
-        /* Testo in Bianco Puro */
-        .bio-block p, .content-block p {
-            color: #ffffff !important; 
+        /* Scrittura in Nero Profondo Nitido */
+        .bio-block p {
+            color: #000000 !important;
             font-size: 0.98em;
             text-align: justify;
-            line-height: 1.9;
+            font-weight: 400;
         }
 
-        /* Griglia Competenze Premium con Scrittura Bianca e Contorno Oro */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 35px;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         .card {
-            background: #0d1015;
+            background: #ffffff;
             padding: 45px 35px;
-            border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            border: 2px solid #d4af37; /* Contorno oro integrale */
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+            border-top: 3px solid #f0f2f5;
             transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(212,175,55,0.2);
-            border-color: #fcf6ba;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+            border-top: 3px solid #d4af37;
         }
 
         .card h2 {
             margin-top: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 1.4em;
+            font-size: 1.35em;
             font-weight: 600;
-            color: #d4af37;
+            color: #0d1015;
             padding-bottom: 15px;
-            border-bottom: 1px solid #232b38;
+            border-bottom: 1px solid #f0f2f5;
         }
 
-        /* Testo Schede in Bianco Puro */
+        /* Scrittura Schede in Nero Profondo Nitido */
         .card p {
-            color: #ffffff !important;
+            color: #000000 !important;
             font-size: 0.96em;
-            margin-bottom: 0;
+            font-weight: 400;
         }
 
-        /* Vetrina Spotify Interna */
-        .project-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 25px; 
-            margin-top: 30px; 
-        }
-        
-        .project-card { 
-            background: #161920; 
-            border: 1px solid #d4af37; 
-            border-radius: 4px; 
-            padding: 35px 20px; 
-            text-align: center; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
-        
-        .project-title { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 1.35em; 
-            color: #ffffff; 
-            margin-bottom: 6px; 
-        }
-        
-        .project-meta { 
-            font-size: 0.75em; 
-            color: #d4af37; 
-            letter-spacing: 2px; 
-            text-transform: uppercase; 
-            margin-bottom: 25px; 
-            font-weight: 500;
-        }
-        
-        .btn-spotify { 
-            display: inline-flex; 
-            align-items: center;
-            justify-content: center;
-            background: transparent; 
-            color: #fff; 
-            border: 1px solid #b38728; 
-            padding: 11px 24px; 
-            text-decoration: none; 
-            font-size: 0.85em; 
-            letter-spacing: 1px; 
-            transition: all 0.3s; 
-            width: 75%;
-            font-weight: 500;
-        }
-        
-        .btn-spotify:hover { 
-            background: #d4af37; 
-            color: #0d1015; 
-            box-shadow: 0 4px 15px rgba(212,175,55,0.3); 
-        }
-
-        /* Sezione Bassa Contatti */
         .contact-section {
-            background: #0d1015;
-            color: #ffffff;
-            padding: 65px 40px;
+            background: #ffffff;
+            color: #0d1015;
+            padding: 60px 40px;
             text-align: center;
-            border-radius: 4px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-            border: 2px solid #d4af37; /* Contorno oro */
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            border: 1px solid #eef1f5;
         }
 
         .contact-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.1em;
+            font-size: 1.8em;
             font-weight: 600;
-            margin-top: 0;
-            color: #d4af37;
-        }
-
-        .contact-section p {
-            color: #ffffff !important;
-            margin-bottom: 35px;
         }
 
         .social-buttons-container {
@@ -336,18 +234,17 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            max-width: 900px;
-            margin: 0 auto;
+            margin-top: 25px;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background: #ffffff;
-            color: #0d1015;
-            border: 2px solid #ffffff;
-            padding: 16px 45px;
+            background: #0d1015;
+            color: #ffffff;
+            border: 2px solid #0d1015;
+            padding: 15px 40px;
             text-decoration: none;
             border-radius: 2px;
             font-size: 0.85em;
@@ -355,40 +252,35 @@
             text-transform: uppercase;
             font-weight: 600;
             transition: all 0.3s ease;
-            min-width: 210px;
+            min-width: 200px;
         }
 
         .btn:hover {
             background: transparent;
-            color: #ffffff;
-            border-color: #ffffff;
+            color: #0d1015;
         }
 
-        /* Tasti d'oro coordinati */
-        .btn-gold-brand {
-            background: linear-gradient(135deg, #bf953f, #b38728);
-            border-color: #b38728;
-            color: #ffffff;
-        }
-
-        .btn-gold-brand:hover {
+        .btn-social {
             background: transparent;
-            color: #d4af37;
-            border-color: #d4af37;
-            box-shadow: 0 4px 15px rgba(179,135,40,0.4);
+            color: #0d1015;
+            border: 2px solid #0d1015;
+        }
+
+        .btn-social:hover {
+            background: #0d1015;
+            color: #ffffff;
         }
 
         @media (max-width: 992px) {
-            .bio-wrapper { flex-direction: column; align-items: center; }
-            .bio-image-box { flex: 0 0 auto; width: 250px; margin-bottom: 35px; }
-            header h1 { font-size: 2.5em; }
-            .content-block { padding: 40px 25px; }
+            .bio-wrapper { flex-direction: column; align-items: center; padding: 35px 25px; }
+            .bio-image-box { flex: 0 0 auto; width: 240px; margin-bottom: 30px; }
+            header h1 { font-size: 2.4em; }
             .social-buttons-container { flex-direction: column; align-items: center; width: 100%; }
             .btn { width: 85%; min-width: auto; }
         }
 
         footer {
-            text-align: center; padding: 50px 20px; background-color: #0d1015; color: #718096; font-size: 0.82em; border-top: 1px solid #1a1f26; margin-top: 80px;
+            text-align: center; padding: 45px 20px; background-color: #080a0d; color: #525a66; font-size: 0.82em; border-top: 1px solid #141921;
         }
     </style>
 </head>
@@ -405,37 +297,25 @@
             <h1>Nicola Auletta</h1>
         </div>
         <div class="subtitle">Songwriting • Stage Direction • Healthcare Management</div>
-        
-        <!-- HUB SOCIAL ALTO -->
-        <div class="top-social-hub">
-            <a href="https://www.instagram.com/aulettanico?igsh=MTRsM2JudnNrdXBrYw%3D%3D&utm_source=qr" target="_blank" class="social-badge-link">Instagram</a>
-            <a href="https://youtube.com/@nicolaauletta?si=D7oAkEvkCKfrsOJK" target="_blank" class="social-badge-link">YouTube</a>
-            <a href="mailto:pressnicoautore@gmail.com" class="social-badge-link">Email Contatto</a>
-        </div>
     </header>
 
     <div class="container">
-        
-        <!-- BIOGRAFIA CON SCRITTURA BIANCA E CONTORNO ORO -->
-        <div class="content-block">
-            <div class="bio-wrapper">
-                <div class="bio-image-box">
-                    <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta" loading="lazy">
+        <div class="bio-wrapper">
+            <div class="bio-image-box">
+                <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta" loading="lazy">
+            </div>
+            <div class="bio-content">
+                <div class="bio-block">
+                    <h2>Biografia</h2>
+                    <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Sviluppa e coordina progetti che collegano la sensibilità artistica musicale e l'espressività scenica, integrando competenze di gestione organizzativa e direzionale.</p>
                 </div>
-                <div class="bio-content">
-                    <div class="bio-block">
-                        <h2>Biografia</h2>
-                        <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Sviluppa e coordina progetti che collegano la sensibilità artistica musicale e l'espressività scenica, integrando competenze di gestione organizzativa e direzionale.</p>
-                    </div>
-                    <div class="bio-block">
-                        <h2>Biography</h2>
-                        <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. He earned a Master's degree with honors in "Teatro, pedagogia e didattica" from the Università degli Studi Suor Orsola Benincasa in Naples. He designs and manages projects that bridge musical artistry and stage expression, incorporating strong organizational leadership skills.</p>
-                    </div>
+                <div class="bio-block">
+                    <h2>Biography</h2>
+                    <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. He earned a Master's degree with honors in "Teatro, pedagogia e didattica" from the Università degli Studi Suor Orsola Benincasa in Naples. He designs and manages projects that bridge musical artistry and stage expression, incorporating strong organizational leadership skills.</p>
                 </div>
             </div>
         </div>
 
-        <!-- LE TRE SCHEDE INFORMATIVE CON CONTORNO ORO -->
         <div class="grid">
             <div class="card">
                 <h2>Composizione & Scrittura</h2>
@@ -443,7 +323,7 @@
             </div>
             <div class="card">
                 <h2>Direzione Teatrale</h2>
-                <p>Regia, allestimento scenico e cura della drammaturgia con forte attentione alla pedagogia teatrale e ai ritmi della messinscena.</p>
+                <p>Regia, allestimento scenico e cura della drammaturgia con forte attenzione alla pedagogia teatrale e ai ritmi della messinscena.</p>
             </div>
             <div class="card">
                 <h2>Management Operativo</h2>
@@ -451,44 +331,16 @@
             </div>
         </div>
 
-        <!-- SEZIONE DISCOGRAFICA CON CONTORNO ORO -->
-        <div class="content-block">
-            <h2>Featured Releases</h2>
-            <p style="color: #ffffff; margin-top: 0;">Ascolta le produzioni ufficiali e i progetti musicali sulle piattaforme di streaming:</p>
-            
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-title">Baila mi amor</div>
-                    <div class="project-meta">Autore e Compositore</div>
-                    <a href="https://open.spotify.com/intl-it/track/4dZgB1jWkKZesZMqaZUDEc?si=a1b38acd2f66434d" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-title">La teoria</div>
-                    <div class="project-meta">Autore e Compositore</div>
-                    <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-title">Let's tear down the walls</div>
-                    <div class="project-meta">Autore e Compositore</div>
-                    <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=cbe1293dbd2d4693" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- CONTATTI CON CONTORNO ORO -->
         <div class="contact-section">
             <h2>Progetti e Sinergie Professionali</h2>
-            <p>Segui i canali ufficiali per aggiornamenti sulle produzioni, per valutare collaborazioni o inoltrare richieste lavorative.</p>
+            <p style="color: #5c6475 !important;">Segui i canali ufficiali per aggiornamenti sulle produzioni, per valutare collaborazioni o inoltrare richieste lavorative.</p>
             
             <div class="social-buttons-container">
-                <a href="mailto:pressnicoautore@gmail.com" class="btn">Invia una Email</a>
-                <a href="https://www.instagram.com/aulettanico?igsh=MTRsM2JudnNrdXBrYw%3D%3D&utm_source=qr" target="_blank" class="btn btn-gold-brand">Instagram Profile</a>
-                <a href="https://youtube.com/@nicolaauletta?si=D7oAkEvkCKfrsOJK" target="_blank" class="btn btn-gold-brand">YouTube Channel</a>
+                <a href="mailto:pressnicoautore@gmail.com" class="btn">Contattami via Email</a>
+                <a href="https://www.instagram.com/aulettanico?igsh=MTRsM2JudnNrdXBrYw%3D%3D&utm_source=qr" target="_blank" class="btn btn-social">Instagram</a>
+                <a href="https://youtube.com/@nicolaauletta?si=D7oAkEvkCKfrsOJK" target="_blank" class="btn btn-social">YouTube</a>
             </div>
         </div>
-
     </div>
 
     <footer>
