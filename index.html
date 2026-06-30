@@ -3,88 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musica & Canzoni | Nicola Auletta</title>
+    <title>Nicola Auletta | Official Site - Songwriter, Director & Instructor</title>
+    <meta name="description" content="Sito ufficiale di Nicola Auletta: autore di musica d'autore, compositore contemporaneo, regista teatrale e docente presso la Village Music Academy. Laureato in Arte Scenica.">
+    <meta name="keywords" content="Nicola Auletta, Nicola Auletta Autore, Nicola Auletta Regista, Nicola Auletta Canzoni, Nicola Auletta Teatro, Songwriting contemporaneo, Musica d'autore, Regia Teatrale, Art Garage Pozzuoli, Village Music Academy, Fabrizio Berlincioni, Vincenzo Capasso, Let's tear down the walls, Baila mi amor, La teoria, Teatro contemporaneo Napoli">
+    <meta name="author" content="Nicola Auletta">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Nicola Auletta | Official Portfolio">
+    <meta property="og:description" content="Autore, compositore e regista teatrale contemporaneo. Master in Arti Sceniche presso l'Università Suor Orsola Benincasa.">
+    <meta property="og:image" content="Nicola-auletta.jpg.JPEG">
+    <meta property="og:url" content="https://nickauletta.github.io/Nicola-Auletta-music.github.io/">
+    <meta property="og:type" content="profile">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nicola Auletta",
+      "url": "https://nickauletta.github.io/Nicola-Auletta-music.github.io/",
+      "image": "https://nickauletta.github.io/Nicola-Auletta-music.github.io/Nicola-auletta.jpg.JPEG",
+      "description": "Autore, compositore contemporaneo, regista teatrale e docente presso la Village Music Academy. Specializzato in Arti Sceniche e Management Sanitario.",
+      "jobTitle": ["Songwriter", "Theatre Director", "Healthcare Professional"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Università degli Studi Suor Orsola Benincasa"
+      },
+      "knowsAbout": ["Songwriting", "Stage Direction", "Theatre pedagogy", "Music composition", "Healthcare management"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Village Music Academy"
+      }
+    }
+    </script>
+
     <style>
-        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background-color: #f7fafc; color: #1e2229; line-height: 1.8; }
-        nav { background: #080a0d; text-align: center; padding: 18px 0; border-bottom: 1px solid #232b38; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: #ffffff; margin: 0 25px; text-decoration: none; font-weight: 500; font-size: 0.85em; letter-spacing: 2px; text-transform: uppercase; transition: color 0.3s; }
-        nav a.active, nav a:hover { color: #d4af37; }
-        
-        .hero-section { background: #0d1015; color: #fff; padding: 80px 20px; text-align: center; border-bottom: 4px solid #d4af37; }
-        .hero-section h1 { font-family: 'Playfair Display', serif; font-size: 2.8em; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
-        .hero-section p { color: #d4af37; font-size: 0.95em; letter-spacing: 3px; text-transform: uppercase; margin-top: 10px; }
-        
-        .container { max-width: 1000px; margin: 50px auto; padding: 0 25px; }
-        .content-block { background: #ffffff; padding: 45px; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.02); margin-bottom: 40px; border-left: 4px solid #d4af37; }
-        .content-block h2 { font-family: 'Playfair Display', serif; font-size: 1.6em; margin-top: 0; color: #0d1015; }
-        
-        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
-        .project-card { background: #0d1015; border: 1px solid #232b38; border-radius: 4px; padding: 25px; text-align: center; color: #fff; }
-        .project-title { font-family: 'Playfair Display', serif; font-size: 1.25em; color: #fff; margin-bottom: 6px; }
-        .project-meta { font-size: 0.75em; color: #d4af37; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
-        
-        .btn-spotify { display: inline-block; background: transparent; color: #fff; border: 1px solid #d4af37; padding: 10px 20px; text-decoration: none; font-size: 0.85em; letter-spacing: 1px; transition: all 0.3s; }
-        .btn-spotify:hover { background: #d4af37; color: #0d1015; box-shadow: 0 4px 12px rgba(212,175,55,0.25); }
-        
-        footer { text-align: center; padding: 45px 20px; background-color: #080a0d; color: #525a66; font-size: 0.82em; margin-top: 60px; }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7fafc; 
+            color: #1e2229;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigazione Professionale */
+        nav {
+            background: #080a0d; 
+            text-align: center; 
+            padding: 18px 0; 
+            border-bottom: 1px solid #232b38;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #ffffff; 
+            margin: 0 25px; 
+            text-decoration: none; 
+            font-weight: 500; 
+            font-size: 0.85em; 
+            letter-spacing: 2px; 
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a.active, nav a:hover {
+            color: #d4af37;
+        }
+
+        header {
+            background: #0d1015; 
+            color: #ffffff;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 4px solid #d4af37; 
+            box-shadow: inset 0 -10px 30px rgba(0,0,0,0.3);
+        }
+
+        .name-badge {
+            display: inline-block;
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            border-image-slice: 1;
+            padding: 18px 45px;
+            margin-bottom: 25px;
+            background: rgba(17, 20, 26, 0.8);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2em;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        header .subtitle {
+            margin: 15px 0 0 0;
+            font-size: 0.95em;
+            font-weight: 500;
+            letter-spacing: 5px;
+            color: #d4af37; 
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+
+        .bio-wrapper {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 6px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.03);
+            margin-bottom: 60px;
+            border-top: 4px solid #d4af37;
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .bio-image-box {
+            flex: 0 0 300px; 
+        }
+
+        .bio-image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+            display: block;
+        }
+
+        .bio-content {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .bio-block h2 {
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #0d1015;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 12px;
+        }
+
+        .bio-block p {
+            color: #4a515e;
+            font-size: 0.98em;
+            text-align: justify;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 45px 35px;
+            border-radius: 6px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+            border-top: 3px solid #f0f2f5;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+            border-top: 3px solid #d4af37;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35em;
+            font-weight: 600;
+            color: #0d1015;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f2f5;
+        }
+
+        .card p {
+            color: #5c6475;
+            font-size: 0.96em;
+        }
+
+        .contact-section {
+            background: #ffffff;
+            color: #0d1015;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            border: 1px solid #eef1f5;
+        }
+
+        .contact-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0d1015;
+            color: #ffffff;
+            border: 2px solid #0d1015;
+            padding: 15px 45px;
+            text-decoration: none;
+            border-radius: 2px;
+            margin-top: 15px;
+            font-size: 0.85em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: #0d1015;
+        }
+
+        @media (max-width: 992px) {
+            .bio-wrapper { flex-direction: column; align-items: center; padding: 35px 25px; }
+            .bio-image-box { flex: 0 0 auto; width: 240px; margin-bottom: 30px; }
+            header h1 { font-size: 2.4em; }
+        }
+
+        footer {
+            text-align: center; padding: 45px 20px; background-color: #080a0d; color: #525a66; font-size: 0.82em; border-top: 1px solid #141921;
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="https://nickauletta.github.io/Nicola-Auletta-music.github.io/index.html">Home</a>
-        <a href="https://nickauletta.github.io/Nicola-Auletta-music.github.io/teatro.html">Teatro</a>
-        <a href="https://nickauletta.github.io/Nicola-Auletta-music.github.io/musica.html" class="active">Musica</a>
+        <a href="./index.html" class="active">Home</a>
+        <a href="./teatro.html">Teatro</a>
+        <a href="./musica.html">Musica</a>
     </nav>
 
-    <div class="hero-section">
-        <h1>Produzioni Musicali & Songwriting</h1>
-        <p>Scrittura compositiva, arrangiamenti e docenza accademica</p>
-    </div>
+    <header>
+        <div class="name-badge">
+            <h1>Nicola Auletta</h1>
+        </div>
+        <div class="subtitle">Songwriting • Stage Direction • Healthcare Management</div>
+    </header>
 
     <div class="container">
-        <div class="content-block">
-            <h2>L'Attività di Docenza: Village Music Academy</h2>
-            <p>Nicola Auletta affianca alla costante attività creativa l'impegno formativo in qualità di docente presso la <strong>Village Music Academy (VMA)</strong>. Trasmettere le tecniche di scrittura melodica e l'interpretazione dei testi rappresenta un pilastro del suo approccio alla musica d'autore.</p>
-        </div>
-
-        <div class="content-block">
-            <h2>Collaborazioni di Spessore</h2>
-            <p>Il lavoro sul campo e la costante ricerca discografica hanno portato Nicola a stringere importanti collaborazioni con storiche e rilevanti firme del panorama musicale italiano, lavorando a stretto contatto con autori del calibro di <strong>Fabrizio Berlincioni</strong> e <strong>Vincenzo Capasso</strong>.</p>
-            <p>Ogni opera viene sviluppata seguendo l'intera filiera creativa: dalla stesura iniziale dei testi alla composizione, fino alla cura della direzione degli arrangiamenti e alla proposta verso mercati internazionali.</p>
-        </div>
-
-        <div class="content-block">
-            <h2>Catalogo Release Ufficiali</h2>
-            <p>Di seguito le release ufficiali pubblicate sulle principali piattaforme di streaming in veste di Autore e Compositore:</p>
-            
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-title">Baila mi amor</div>
-                    <div class="project-meta">Autore e Compositore</div>
-                    <a href="https://open.spotify.com/intl-it/track/4dZgB1jWkKZesZMqaZUDEc?si=a1b38acd2f66434d" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
+        <div class="bio-wrapper">
+            <div class="bio-image-box">
+                <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta" loading="lazy">
+            </div>
+            <div class="bio-content">
+                <div class="bio-block">
+                    <h2>Biografia</h2>
+                    <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Sviluppa e coordina progetti che collegano la sensibilità artistica musicale e l'espressività scenica, integrando competenze di gestione organizzativa e direzionale.</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-title">La teoria</div>
-                    <div class="project-meta">Autore e Compositore</div>
-                    <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-title">Let's tear down the walls</div>
-                    <div class="project-meta">Autore e Compositore</div>
-                    <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=cbe1293dbd2d4693" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
+                <div class="bio-block">
+                    <h2>Biography</h2>
+                    <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. He earned a Master's degree with honors in "Teatro, pedagogia e didattica" from the Università degli Studi Suor Orsola Benincasa in Naples. He designs and manages projects that bridge musical artistry and stage expression, incorporating strong organizational leadership skills.</p>
                 </div>
             </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Composizione & Scrittura</h2>
+                <p>Creazione completa di opere inedite, curando la stesura dei testi e lo sviluppo delle melodie sia per network nazionali che internazionali.</p>
+            </div>
+            <div class="card">
+                <h2>Direzione Teatrale</h2>
+                <p>Regia, allestimento scenico e cura della drammaturgia con forte attenzione alla pedagogia teatrale e ai ritmi della messinscena.</p>
+            </div>
+            <div class="card">
+                <h2>Management Operativo</h2>
+                <p>Gestione organizzativa di flussi di lavoro, coordinamento di team sul territorio e rigorosa ottimizzazione delle risorse professionali.</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Progetti e Sinergie Professionali</h2>
+            <p>Per valutare collaborazioni artistiche, produzioni o consulenze organizzative.</p>
+            <a href="mailto:pressnicoautore@gmail.com" class="btn">Contattami / Contact Me</a>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Nicola Auletta. Tutti i diritti riservati.</p>
+        <p>© 2026 Nicola Auletta. Tutti i diritti riservati.</p>
     </footer>
 
 </body>
