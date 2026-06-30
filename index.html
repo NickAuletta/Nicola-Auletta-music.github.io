@@ -48,45 +48,46 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7fafc; 
-            color: #1e2229;
+            background-color: #0f1115; 
+            color: #e2e8f0;
             line-height: 1.8;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Navigazione Professionale */
+        /* Navigazione Premium */
         nav {
-            background: #080a0d; 
+            background: #07080a; 
             text-align: center; 
-            padding: 18px 0; 
-            border-bottom: 1px solid #232b38;
+            padding: 20px 0; 
+            border-bottom: 1px solid #1a1f26;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         nav a {
-            color: #ffffff; 
+            color: #94a3b8; 
             margin: 0 25px; 
             text-decoration: none; 
             font-weight: 500; 
             font-size: 0.85em; 
             letter-spacing: 2px; 
             text-transform: uppercase;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
         }
 
         nav a.active, nav a:hover {
             color: #d4af37;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
         }
 
         header {
-            background: #0d1015; 
+            background: #07080a; 
             color: #ffffff;
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
-            border-bottom: 4px solid #d4af37; 
-            box-shadow: inset 0 -10px 30px rgba(0,0,0,0.3);
+            border-bottom: 3px solid #d4af37; 
+            box-shadow: inset 0 -20px 50px rgba(0,0,0,0.6);
         }
 
         .name-badge {
@@ -94,59 +95,64 @@
             border: 2px solid transparent;
             border-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
             border-image-slice: 1;
-            padding: 18px 45px;
+            padding: 20px 50px;
             margin-bottom: 25px;
-            background: rgba(17, 20, 26, 0.8);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            background: rgba(10, 12, 16, 0.9);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
         }
 
         header h1 {
             margin: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 3.2em;
+            font-size: 3.5em;
             font-weight: 400;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             text-transform: uppercase;
             color: #ffffff;
         }
 
         header .subtitle {
-            margin: 15px 0 0 0;
-            font-size: 0.95em;
+            margin: 20px 0 0 0;
+            font-size: 0.9em;
             font-weight: 500;
-            letter-spacing: 5px;
+            letter-spacing: 6px;
             color: #d4af37; 
             text-transform: uppercase;
         }
 
         .container {
             max-width: 1100px;
-            margin: 50px auto;
+            margin: 60px auto;
             padding: 0 25px;
         }
 
-        .bio-wrapper {
-            background: #ffffff;
+        /* Blocchi Contenuto Scuri ed Editoriali */
+        .content-block {
+            background: #161920;
             padding: 50px;
             border-radius: 6px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.03);
-            margin-bottom: 60px;
-            border-top: 4px solid #d4af37;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            margin-bottom: 50px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .bio-wrapper {
             display: flex;
             gap: 50px;
             align-items: flex-start;
         }
 
         .bio-image-box {
-            flex: 0 0 300px; 
+            flex: 0 0 320px; 
         }
 
         .bio-image-box img {
             width: 100%;
             height: auto;
             border-radius: 4px;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
             display: block;
+            border: 1px solid #232936;
         }
 
         .bio-content {
@@ -156,104 +162,199 @@
             gap: 40px;
         }
 
-        .bio-block h2 {
+        .bio-block h2, .content-block h2 {
             margin-top: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 1.6em;
+            font-size: 1.8em;
             font-weight: 600;
-            color: #0d1015;
-            border-bottom: 2px solid #f0f2f5;
-            padding-bottom: 12px;
+            color: #ffffff;
+            border-bottom: 1px solid #232936;
+            padding-bottom: 15px;
+            letter-spacing: 0.5px;
         }
 
         .bio-block p {
-            color: #4a515e;
+            color: #cbd5e1;
             font-size: 0.98em;
             text-align: justify;
+            line-height: 1.9;
         }
 
+        /* Griglia Competenze Premium */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 35px;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .card {
-            background: #ffffff;
+            background: #161920;
             padding: 45px 35px;
             border-radius: 6px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
-            border-top: 3px solid #f0f2f5;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+            border-top: 3px solid #1e2330;
             transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
             border-top: 3px solid #d4af37;
         }
 
         .card h2 {
             margin-top: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 1.35em;
+            font-size: 1.4em;
             font-weight: 600;
-            color: #0d1015;
+            color: #ffffff;
             padding-bottom: 15px;
-            border-bottom: 1px solid #f0f2f5;
+            border-bottom: 1px solid #1e2330;
         }
 
         .card p {
-            color: #5c6475;
+            color: #94a3b8;
             font-size: 0.96em;
+            margin-bottom: 0;
         }
 
+        /* Sezione Release Integrate */
+        .project-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin-top: 30px; 
+        }
+        
+        .project-card { 
+            background: #0d1015; 
+            border: 1px solid #1e2330; 
+            border-radius: 4px; 
+            padding: 30px 20px; 
+            text-align: center; 
+        }
+        
+        .project-title { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 1.3em; 
+            color: #fff; 
+            margin-bottom: 6px; 
+        }
+        
+        .project-meta { 
+            font-size: 0.75em; 
+            color: #d4af37; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            margin-bottom: 25px; 
+            font-weight: 500;
+        }
+        
+        .btn-spotify { 
+            display: inline-flex; 
+            align-items: center;
+            justify-content: center;
+            background: transparent; 
+            color: #fff; 
+            border: 1px solid #333f52; 
+            padding: 11px 24px; 
+            text-decoration: none; 
+            font-size: 0.85em; 
+            letter-spacing: 1px; 
+            transition: all 0.3s; 
+            width: 75%;
+        }
+        
+        .btn-spotify:hover { 
+            background: #d4af37; 
+            color: #0d1015; 
+            border-color: #d4af37;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.3); 
+        }
+
+        /* Sezione Contatto e Canali Social Professionali */
         .contact-section {
-            background: #ffffff;
-            color: #0d1015;
+            background: #161920;
+            color: #ffffff;
             padding: 60px 40px;
             text-align: center;
             border-radius: 6px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
-            border: 1px solid #eef1f5;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            border: 1px solid #1e2330;
+            border-top: 4px solid #d4af37;
         }
 
         .contact-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: 600;
+            margin-top: 0;
+        }
+
+        .contact-section p {
+            color: #94a3b8;
+            margin-bottom: 35px;
+        }
+
+        .social-buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .btn {
-            display: inline-block;
-            background: #0d1015;
-            color: #ffffff;
-            border: 2px solid #0d1015;
-            padding: 15px 45px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #d4af37;
+            color: #0d1015;
+            border: 2px solid #d4af37;
+            padding: 15px 40px;
             text-decoration: none;
             border-radius: 2px;
-            margin-top: 15px;
             font-size: 0.85em;
             letter-spacing: 2px;
             text-transform: uppercase;
             font-weight: 600;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.15);
+            min-width: 200px;
         }
 
         .btn:hover {
             background: transparent;
-            color: #0d1015;
+            color: #d4af37;
+        }
+
+        /* Pulsanti Alternativi per i Social */
+        .btn-social {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #333f52;
+            box-shadow: none;
+        }
+
+        .btn-social:hover {
+            border-color: #ffffff;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
         }
 
         @media (max-width: 992px) {
-            .bio-wrapper { flex-direction: column; align-items: center; padding: 35px 25px; }
-            .bio-image-box { flex: 0 0 auto; width: 240px; margin-bottom: 30px; }
+            .bio-wrapper { flex-direction: column; align-items: center; }
+            .bio-image-box { flex: 0 0 auto; width: 240px; margin-bottom: 35px; }
             header h1 { font-size: 2.4em; }
+            .content-block { padding: 35px 25px; }
+            .social-buttons-container { flex-direction: column; align-items: center; width: 100%; }
+            .btn { width: 85%; min-width: auto; }
         }
 
         footer {
-            text-align: center; padding: 45px 20px; background-color: #080a0d; color: #525a66; font-size: 0.82em; border-top: 1px solid #141921;
+            text-align: center; padding: 50px 20px; background-color: #07080a; color: #475569; font-size: 0.82em; border-top: 1px solid #161920; margin-top: 80px;
         }
     </style>
 </head>
@@ -273,22 +374,27 @@
     </header>
 
     <div class="container">
-        <div class="bio-wrapper">
-            <div class="bio-image-box">
-                <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta" loading="lazy">
-            </div>
-            <div class="bio-content">
-                <div class="bio-block">
-                    <h2>Biografia</h2>
-                    <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Sviluppa e coordina progetti che collegano la sensibilità artistica musicale e l'espressività scenica, integrando competenze di gestione organizzativa e direzionale.</p>
+        
+        <!-- BIOGRAFIA EDITORIALE -->
+        <div class="content-block">
+            <div class="bio-wrapper">
+                <div class="bio-image-box">
+                    <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta" loading="lazy">
                 </div>
-                <div class="bio-block">
-                    <h2>Biography</h2>
-                    <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. He earned a Master's degree with honors in "Teatro, pedagogia e didattica" from the Università degli Studi Suor Orsola Benincasa in Naples. He designs and manages projects that bridge musical artistry and stage expression, incorporating strong organizational leadership skills.</p>
+                <div class="bio-content">
+                    <div class="bio-block">
+                        <h2>Biografia</h2>
+                        <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica. Metodi, tecniche e pratiche delle arti sceniche" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Sviluppa e coordina progetti che collegano la sensibilità artistica musicale e l'espressività scenica, integrando competenze di gestione organizzativa e direzionale.</p>
+                    </div>
+                    <div class="bio-block">
+                        <h2>Biography</h2>
+                        <p>Nicola Auletta is a songwriter, composer, theatre director, and academic instructor. He earned a Master's degree with honors in "Teatro, pedagogia e didattica" from the Università degli Studi Suor Orsola Benincasa in Naples. He designs and manages projects that bridge musical artistry and stage expression, incorporating strong organizational leadership skills.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- MACRO COMPETENZE -->
         <div class="grid">
             <div class="card">
                 <h2>Composizione & Scrittura</h2>
@@ -304,11 +410,44 @@
             </div>
         </div>
 
+        <!-- VETRINA RELEASE -->
+        <div class="content-block">
+            <h2>Featured Releases</h2>
+            <p style="color: #94a3b8; margin-top: 0;">Ascolta le produzioni ufficiali e i progetti musicali sulle piattaforme di streaming:</p>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-title">Baila mi amor</div>
+                    <div class="project-meta">Autore e Compositore</div>
+                    <a href="https://open.spotify.com/intl-it/track/4dZgB1jWkKZesZMqaZUDEc?si=a1b38acd2f66434d" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">La teoria</div>
+                    <div class="project-meta">Autore e Compositore</div>
+                    <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Let's tear down the walls</div>
+                    <div class="project-meta">Autore e Compositore</div>
+                    <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=cbe1293dbd2d4693" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEZIONE CONTATTO & SOCIAL NETWORKS CORRETTI -->
         <div class="contact-section">
             <h2>Progetti e Sinergie Professionali</h2>
-            <p>Per valutare collaborazioni artistiche, produzioni o consulenze organizzative.</p>
-            <a href="mailto:pressnicoautore@gmail.com" class="btn">Contattami / Contact Me</a>
+            <p>Segui i canali ufficiali per aggiornamenti sulle produzioni, per valutare collaborazioni o inoltrare richieste lavorative.</p>
+            
+            <div class="social-buttons-container">
+                <a href="mailto:pressnicoautore@gmail.com" class="btn">Contattami via Email</a>
+                <a href="https://www.instagram.com/aulettanico?igsh=MTRsM2JudnNrdXBrYw%3D%3D&utm_source=qr" target="_blank" class="btn btn-social">Instagram Profile</a>
+                <a href="https://youtube.com/@nicolaauletta?si=D7oAkEvkCKfrsOJK" target="_blank" class="btn btn-social">YouTube Channel</a>
+            </div>
         </div>
+
     </div>
 
     <footer>
