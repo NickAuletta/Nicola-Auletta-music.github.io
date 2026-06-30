@@ -21,6 +21,32 @@
         .content-block { background: #ffffff; padding: 45px; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.02); margin-bottom: 40px; border-left: 4px solid #d4af37; }
         .content-block h2 { font-family: 'Playfair Display', serif; font-size: 1.6em; margin-top: 0; color: #0d1015; }
         
+        /* Stile Galleria Fotografica Ottimizzato */
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin-top: 30px;
+        }
+        .gallery-item {
+            background: #ffffff;
+            border: 1px solid #eef1f5;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
         .focus-list { margin: 20px 0; padding-left: 20px; }
         .focus-list li { margin-bottom: 12px; color: #4a515e; }
         
@@ -51,6 +77,33 @@
             <h2>Esperienze Laboratoriali: Art Garage Pozzuoli</h2>
             <p>Sul piano prettamente registico e attoriale, un tassello fondamentale dello sviluppo professionale è rappresentato dall'intensa attività svolta presso i laboratori dell'<strong>Art Garage di Pozzuoli</strong>, sotto l'autorevole direzione artistica e pedagogica di <strong>Cetty Sommella</strong> e <strong>Nando Paone</strong>.</p>
             <p>In questo contesto si è perfezionata una linea di regia attiva e dinamica, attenta al ritmo drammaturgico, al movimento del corpo nello spazio scenico e all'intenzionalità interpretativa dell'attore.</p>
+        </div>
+
+        <!-- SEZIONE GALLERIA CON I NUOVI NOMI FILE -->
+        <div class="content-block">
+            <h2>Galleria Scenica & Produzioni</h2>
+            <p>Immagini tratte dalle messemscena, backstage e momenti di direzione registica:</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Nicola Auletta.jpg" alt="Nicola Auletta - Ritratto Regia" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Teatro 1.JPEG" alt="Scenografia e Interpretazione" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Teatro 2.JPEG" alt="Drammaturgia delle luci e dei movimenti" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Teatro 3.JPEG" alt="Regia Teatrale Nicola Auletta" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Teatro 4.JPEG" alt="Studio del personaggio e dizione" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="Teatro.JPEG" alt="Silhouette e intensità scenica" loading="lazy">
+                </div>
+            </div>
         </div>
 
         <div class="content-block">
