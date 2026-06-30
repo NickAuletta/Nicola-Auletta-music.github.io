@@ -21,11 +21,16 @@
         .content-block { background: #ffffff; padding: 45px; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.02); margin-bottom: 40px; border-left: 4px solid #d4af37; }
         .content-block h2 { font-family: 'Playfair Display', serif; font-size: 1.6em; margin-top: 0; color: #0d1015; }
         
+        /* Stile Galleria Fotografica Ottimizzato */
         .gallery-grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
             gap: 25px; 
             margin-top: 30px;
+        }
+        .gallery-link {
+            text-decoration: none;
+            display: block;
         }
         .gallery-item {
             background: #ffffff;
@@ -44,6 +49,15 @@
             height: 250px;
             object-fit: cover;
             display: block;
+            -webkit-touch-callout: default; /* Abilita salvataggio nativo iOS */
+        }
+        .download-tip {
+            font-size: 0.8em;
+            color: #718096;
+            text-align: center;
+            margin-top: 8px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
         }
         
         .focus-list { margin: 20px 0; padding-left: 20px; }
@@ -80,27 +94,52 @@
 
         <div class="content-block">
             <h2>Galleria Scenica & Produzioni</h2>
-            <p>Immagini tratte dalle messemscena, backstage e momenti di direzione registica:</p>
+            <p style="margin-bottom: 10px;">Immagini tratte dalle messemscena, backstage e momenti di direzione registica.</p>
+            <p style="font-size: 0.85em; color: #d4af37; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-top: 0;">💡 Nota per smartphone: Tieni premuto a lungo su una foto per salvarla direttamente in galleria.</p>
             
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="Nicola Auletta.jpg" alt="Nicola Auletta - Ritratto Regia" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Teatro 1.JPEG" alt="Scenografia e Interpretazione" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Teatro 2.JPEG" alt="Drammaturgia delle luci e dei movimenti" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Teatro 3.JPEG" alt="Regia Teatrale Nicola Auletta" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Teatro 4.JPEG" alt="Studio del personaggio e dizione" loading="lazy">
-                </div>
-                <div class="gallery-item">
-                    <img src="Teatro.JPEG" alt="Silhouette e intensità scenica" loading="lazy">
-                </div>
+                <!-- Foto 1 -->
+                <a href="Nicola Auletta.jpg" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Nicola Auletta.jpg" alt="Nicola Auletta - Ritratto Regia" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 2 -->
+                <a href="Teatro 1.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 1.JPEG" alt="Scenografia e Interpretazione" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 3 -->
+                <a href="Teatro 2.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 2.JPEG" alt="Drammaturgia delle luci e dei movimenti" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 4 -->
+                <a href="Teatro 3.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 3.JPEG" alt="Regia Teatrale Nicola Auletta" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 5 -->
+                <a href="Teatro 4.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 4.JPEG" alt="Studio del personaggio e dizione" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 6 -->
+                <a href="Teatro.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro.JPEG" alt="Silhouette e intensità scenica" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
             </div>
         </div>
 
