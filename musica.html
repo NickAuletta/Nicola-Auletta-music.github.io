@@ -43,9 +43,22 @@
         .content-block h2 { font-family: 'Playfair Display', serif; font-size: 1.8em; margin-top: 0; color: #d4af37; border-bottom: 1px solid #2d3545; padding-bottom: 10px; }
         p { color: #ffffff; font-size: 0.95em; }
 
-        /* Griglia Release */
+        /* Griglia Release con allineamento verticale */
         .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
-        .project-card { background: #0d1015; border: 1px solid #252b36; border-radius: 4px; padding: 30px; text-align: center; color: #fff; border-top: 2px solid #d4af37; }
+        
+        .project-card { 
+            background: #0d1015; 
+            border: 1px solid #252b36; 
+            border-radius: 4px; 
+            padding: 30px; 
+            text-align: center; 
+            color: #fff; 
+            border-top: 2px solid #d4af37;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Spinge il pulsante in fondo alla card */
+        }
+        
         .project-title { font-family: 'Playfair Display', serif; font-size: 1.4em; color: #fff; margin-bottom: 6px; font-weight: 600; }
         .project-meta { font-size: 0.75em; color: #d4af37; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 25px; }
         
@@ -64,6 +77,7 @@
             text-transform: uppercase; 
             font-weight: 700; 
             transition: all 0.3s; 
+            align-self: center; /* Mantiene il pulsante centrato orizzontalmente */
         }
         .btn-spotify:hover { background: transparent; color: #d4af37; }
         
@@ -114,20 +128,26 @@
             
             <div class="project-grid">
                 <div class="project-card">
-                    <div class="project-title">Baila mi amor</div>
-                    <div class="project-meta">Autore e Compositore</div>
+                    <div>
+                        <div class="project-title">Baila mi amor</div>
+                        <div class="project-meta">Autore e Compositore</div>
+                    </div>
                     <a href="https://open.spotify.com/intl-it/track/4dZgB1jWkKZesZMqaZUDEc?si=a1b38acd2f66434d" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-title">La teoria</div>
-                    <div class="project-meta">Autore e Compositore</div>
+                    <div>
+                        <div class="project-title">La teoria</div>
+                        <div class="project-meta">Autore e Compositore</div>
+                    </div>
                     <a href="https://open.spotify.com/intl-it/track/3VAEIPuHSvCkDm80ETw9JU?si=0131e19f56af417a" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-title">Let's tear down the walls</div>
-                    <div class="project-meta">Autore e Compositore</div>
+                    <div>
+                        <div class="project-title">Let's tear down the walls</div>
+                        <div class="project-meta">Autore e Compositore</div>
+                    </div>
                     <a href="https://open.spotify.com/intl-it/track/6Dm0mynDBsJ1PdlptcYITm?si=cbe1293dbd2d4693" target="_blank" class="btn-spotify">Ascolta su Spotify</a>
                 </div>
             </div>
@@ -202,8 +222,8 @@
 
                     El amor quema, es un fuoco apagado,
                     consola incluso un abrazo gentil.
-                    El amor lejano de un sueño prohibido,
-                    se convierte en el desafío, un viaje sutil.
+                    El amor lejano di un sogno proibito,
+                    si trasforma nella sfida, un viaggio sottile.
 
                     La teoría escrita como canciones,
                     es un laberinto de emociones,
@@ -211,28 +231,28 @@
                     hiere y luego sana,
                     Un amor verdadero, la nueva trama.
 
-                    Pero cuando el miedo nos tiene en una esquina,
+                    Pero quando il timore ci stringe in un angolo,
                     always c'è l'amore che vive
                     quello della strada,
                     quello delle città,
                     quello delle piazze
                     della gente comune.
 
-                    El amor fraternal, el lazo profundo,
-                    crece como raíces en todo el mundo.
-                    El amor cambia, evoluciona con el tempo,
-                    pero sigue siendo la razón de un sentimento.
+                    L'amore fraterno, il legame profondo,
+                    cresce come radici in tutto il mondo.
+                    L'amore cambia, evolve con il tempo,
+                    ma resta sempre la ragione di un sentimento.
 
                     La teoría escrita como canciones,
                     es un laberinto de emociones,
                     Silencios gritados envueltos en desesperación
                     hiere y luego sana,
-                    Un amor verdadero, la nueva trama.
+                    Un amor verdadero, la nuova trama.
 
-                    El amor es un misterio, un viaje infinito,
-                    el amor se jacta de un juego infinito.
-                    El amor lo buscas en la mirada ausente,
-                    el amor es grande para toda la gente.</div>
+                    L'amore è un mistero, un viaggio infinito,
+                    l'amore si vanta di un gioco infinito.
+                    L'amore lo cerchi nello sguardo assente,
+                    l'amore è grande per tutta la gente.</div>
                 </div>
 
                 <!-- Canzone 3: Let's tear down the walls -->
