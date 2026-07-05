@@ -3,46 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro & Arti Sceniche | Nicola Auletta</title>
+    <!-- FONT PREMIUM -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
-    <!-- TAG SEO SPECIFICI PER LA SEZIONE TEATRO -->
-    <title>Nicola Auletta | Regia Teatrale e Pedagogia delle Arti Sceniche</title>
-    <meta name="description" content="Regia teatrale e percorsi di formazione diretti da Nicola Auletta. Spettacoli, drammaturgia contemporanea e masterclass incentrate sull'interpretazione emotiva.">
-    <meta name="keywords" content="Nicola Auletta teatro, regia teatrale, arti sceniche, pedagogia teatrale, Suor Orsola Benincasa, direzione attoriale, drammaturgia">
-    <meta name="author" content="Nicola Auletta">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #161920; /* Sfondo Canna di Fucile */
+            color: #ffffff; 
+            line-height: 1.8; 
+        }
+        
+        /* Navigazione */
+        nav { background: #080a0d; text-align: center; padding: 20px 0; border-bottom: 1px solid #232b38; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: #ffffff; margin: 0 25px; text-decoration: none; font-weight: 500; font-size: 0.85em; letter-spacing: 2px; text-transform: uppercase; transition: color 0.3s; }
+        nav a.active, nav a:hover { color: #d4af37; }
+        
+        /* Hero Section */
+        .hero-section { background: #0d1015; color: #fff; padding: 80px 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+        .hero-section h1 { font-family: 'Playfair Display', serif; font-size: 3em; margin: 0; text-transform: uppercase; letter-spacing: 3px; color: #d4af37; }
+        .hero-section p { color: #ffffff; font-size: 0.8em; letter-spacing: 4px; text-transform: uppercase; margin-top: 10px; }
+        
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 25px; }
+        
+        /* Box Principali */
+        .content-block { 
+            background: #1a1e26; 
+            padding: 50px; 
+            border-radius: 4px; 
+            margin-bottom: 50px; 
+            border-left: 3px solid #d4af37; 
+            border: 1px solid #252b36; 
+        }
+        .content-block h2 { font-family: 'Playfair Display', serif; font-size: 1.8em; margin-top: 0; color: #d4af37; border-bottom: 1px solid #2d3545; padding-bottom: 10px; }
+        p { color: #ffffff; font-size: 0.95em; }
+        
+        /* Galleria Fotografica */
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 25px; 
+            margin-top: 30px;
+        }
+        .gallery-link { text-decoration: none; display: block; }
+        .gallery-item { background: #0d1015; border: 1px solid #252b36; border-radius: 4px; overflow: hidden; transition: transform 0.3s ease; }
+        .gallery-item:hover { transform: translateY(-5px); border-color: #d4af37; }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; display: block; -webkit-touch-callout: default; }
+        .download-tip { font-size: 0.8em; color: #4e5766; text-align: center; padding: 10px 0; letter-spacing: 0.5px; text-transform: uppercase; font-weight: 600; }
+        
+        /* Liste Focus */
+        .focus-list { margin: 20px 0; padding-left: 20px; }
+        .focus-list li { margin-bottom: 12px; color: #ffffff; font-size: 0.95em; }
+        .focus-list strong { color: #d4af37; }
+        
+        footer { text-align: center; padding: 40px; color: #4e5766; font-size: 0.8em; }
 
-    <!-- Open Graph per i Social -->
-    <meta property="og:title" content="Nicola Auletta | Regia Teatrale e Formazione">
-    <meta property="og:description" content="Scopri le produzioni teatrali e i metodi di formazione per attori incentrati sulla presenza scenica.">
-    <meta property="og:image" content="Nicola-auletta.jpg.JPEG">
-    <meta property="og:url" content="https://nickauletta.github.io/Nicola-Auletta-music.github.io/teatro.html">
-    <meta property="og:type" content="website">
-
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link rel="stylesheet" href="style.css">
+        @media (max-width: 992px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="teatro.html">Teatro</a>
+        <a href="teatro.html" class="active">Teatro</a>
         <a href="musica.html">Musica</a>
     </nav>
 
-    <header>
-        <h1>Regia & Teatro</h1>
-        <h2>Direzione Scenica • Pedagogia • Formazione Attoriale</h2>
-    </header>
+    <div class="hero-section">
+        <h1>Teatro & Direzione Scenica</h1>
+        <div class="subtitle">Pedagogia teatrale, regia e drammaturgia contemporanea</div>
+    </div>
 
-    <div>
-        <div>
-            <h2>La Visione Teatrale</h2>
-            <p>La mia direzione teatrale mette al centro la pedagogia delle arti sceniche e la cura della recitazione corale, dove ogni ruolo diventa fondamentale per il ritmo dello spettacolo. Attraverso percorsi didattici e masterclass specifiche, guido attori e cantanti verso una profonda interpretazione emotiva e una solida presenza scenica sul palco.</p>
+    <div class="container">
+        <!-- PERCORSO ACCADEMICO -->
+        <div class="content-block">
+            <h2>Il Percorso Accademico e Metodologico</h2>
+            <p>La visione teatrale di Nicola Auletta affonda le radici in una rigorosa preparazione accademica culminata con il conseguimento del <strong>Master di I livello con lode in "Teatro, pedagogia e didattica. Metodi, techniques e pratiche delle arti sceniche"</strong> presso l'Università degli Studi Suor Orsola Benincasa di Napoli.</p>
+            <p>Questo percorso ha consolidato le competenze necessarie per l'insegnamento e l'applicazione dei più importanti metodi pedagogico-teatrali internazionali, orientati sia alla formazione attoriale sia alla strutturazione drammaturgica dello spettacolo.</p>
+        </div>
+
+        <!-- ESPERIENZE LABORATORIALI -->
+        <div class="content-block">
+            <h2>Esperienze Laboratoriali: Art Garage Pozzuoli</h2>
+            <p>Sul piano prettamente registico e attoriale, un tassello fondamentale dello sviluppo professionale è rappresentato dall'intensa attività svolta presso i laboratori dell'<strong>Art Garage di Pozzuoli</strong>, sotto l'autorevole direzione artistica e pedagogica di <strong>Cetty Sommella</strong> e <strong>Nando Paone</strong>.</p>
+            <p>In questo contesto si è perfezionata una linea di regia attiva e dinamica, attenta al ritmo drammaturgico, al movimento del corpo nello spazio scenico e all'intenzionalità interpretativa dell'attore.</p>
+        </div>
+
+        <!-- GALLERIA SCENICA -->
+        <div class="content-block">
+            <h2>Galleria Scenica & Produzioni</h2>
+            <p>Immagini tratte dalle messe in scena, backstage e momenti di direzione registica.</p>
+            <p style="font-size: 0.85em; color: #d4af37; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-top: 0;">💡 Nota per smartphone: Tieni premuto a lungo su una foto per salvarla direttamente in galleria.</p>
+            
+            <div class="gallery-grid">
+                <!-- Foto 1 -->
+                <a href="Nicola Auletta.jpg" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Nicola Auletta.jpg" alt="Nicola Auletta - Ritratto Regia" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 2 -->
+                <a href="Teatro 1.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 1.JPEG" alt="Scenografia e Interpretazione" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 3 -->
+                <a href="Teatro 2.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 2.JPEG" alt="Drammaturgia delle luci e dei movimenti" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 4 -->
+                <a href="Teatro 3.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 3.JPEG" alt="Regia Teatrale Nicola Auletta" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 5 -->
+                <a href="Teatro 4.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro 4.JPEG" alt="Studio del personaggio e dizione" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+                <!-- Foto 6 -->
+                <a href="Teatro.JPEG" target="_blank" class="gallery-link" download>
+                    <div class="gallery-item">
+                        <img src="Teatro.JPEG" alt="Silhouette e intensità scenica" loading="lazy">
+                        <div class="download-tip">Tieni premuto per salvare</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- AMBITI DI RICERCA -->
+        <div class="content-block">
+            <h2>Ambiti di Ricerca ed Intervento Teatrale</h2>
+            <ul class="focus-list">
+                <li><strong>Direzione e Regia:</strong> Costruzione dell'allestimento scenico a partire dallo studio filologico ed emotivo del testo.</li>
+                <li><strong>Pedagogia delle Arti Sceniche:</strong> Sviluppo di percorsi di espressione corporea, dizione e presenza sul palco per attori e performer.</li>
+                <li><strong>Drammaturgia Musicale:</strong> Approccio innovativo nell'integrazione di partiture musicali inedite e recitazione teatrale.</li>
+            </ul>
         </div>
     </div>
 
     <footer>
-        <p>© 2026 Nicola Auletta. Tutti i diritti riservati.</p>
+        <p>&copy; 2026 Nicola Auletta. Tutti i diritti riservati.</p>
     </footer>
 
 </body>
