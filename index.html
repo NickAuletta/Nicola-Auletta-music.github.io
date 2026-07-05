@@ -3,191 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicola Auletta | Official Site</title>
-    <!-- FONT PREMIUM -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <title>Nicola Auletta | Compositore, Autore Musicale e Regista Teatrale</title>
+    <meta name="description" content="Sito ufficiale di Nicola Auletta: compositore, autore musicale completo e regista teatrale. Scopri i progetti, le produzioni e le masterclass di arti sceniche.">
+    <meta name="keywords" content="Nicola Auletta, compositore, autore musicale, regista teatrale, songwriting, Village Music Academy, teatro Napoli, arti sceniche">
+    <meta name="author" content="Nicola Auletta">
 
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #161920; /* Sfondo Canna di Fucile */
-            color: #ffffff;
-            line-height: 1.8;
-        }
+    <meta property="og:title" content="Nicola Auletta | Compositore e Regista Teatrale">
+    <meta property="og:description" content="Sito ufficiale: songwriting, regia teatrale e formazione artistica.">
+    <meta property="og:image" content="Nicola-auletta.jpg.JPEG">
+    <meta property="og:url" content="https://nickauletta.github.io/Nicola-Auletta-music.github.io/index.html">
+    <meta property="og:type" content="website">
 
-        /* Navigazione */
-        nav { background: #080a0d; text-align: center; padding: 20px 0; border-bottom: 1px solid #232b38; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: #ffffff; margin: 0 25px; text-decoration: none; font-weight: 500; font-size: 0.85em; letter-spacing: 2px; text-transform: uppercase; transition: color 0.3s; }
-        nav a.active, nav a:hover { color: #d4af37; }
-
-        header { background: #0d1015; padding: 80px 20px; text-align: center; border-bottom: 3px solid #d4af37; }
-        header h1 { font-family: 'Playfair Display', serif; font-size: 3em; margin: 0; color: #d4af37; letter-spacing: 3px; text-transform: uppercase; }
-        header .subtitle { margin-top: 10px; color: #ffffff; letter-spacing: 4px; font-size: 0.8em; text-transform: uppercase; }
-
-        .container { max-width: 1000px; margin: 50px auto; padding: 0 25px; }
-
-        /* Box Principali */
-        .content-block {
-            background: #1a1e26;
-            padding: 50px;
-            border-radius: 4px;
-            margin-bottom: 50px;
-            border-left: 3px solid #d4af37;
-            border: 1px solid #252b36;
-        }
-
-        .bio-wrapper { display: flex; gap: 40px; align-items: flex-start; }
-        .bio-image-box { flex: 0 0 280px; border: 1px solid #333; padding: 5px; background: #000; }
-        .bio-image-box img { width: 100%; display: block; }
-        
-        /* Contenitore Video Ottimizzato per Verticale */
-        .video-wrapper-vertical {
-            max-width: 315px;
-            margin: 30px auto 0 auto;
-            border: 1px solid #252b36;
-            background: #0d1015;
-            padding: 10px;
-            border-radius: 4px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 177.77%; /* Proporzione 9:16 */
-            height: 0;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 2px;
-        }
-
-        /* Titoli Oro */
-        h2 { font-family: 'Playfair Display', serif; color: #d4af37; font-size: 1.8em; margin-top: 0; border-bottom: 1px solid #2d3545; padding-bottom: 10px; }
-        
-        /* Testo Bianco */
-        p { color: #ffffff; font-size: 0.95em; }
-
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
-        .card { background: #1a1e26; padding: 35px; border-radius: 4px; border: 1px solid #2d3545; border-left: 3px solid #d4af37; }
-        .card h2 { font-size: 1.4em; }
-
-        /* Pulsanti Oro Eleganti e Uniformati */
-        .social-buttons-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px; }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #d4af37;
-            color: #000000;
-            border: 2px solid #d4af37;
-            padding: 12px 25px;
-            text-decoration: none;
-            font-size: 0.8em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 700;
-            transition: all 0.3s;
-            min-width: 170px;
-        }
-        .btn:hover { background: transparent; color: #d4af37; }
-        
-        footer { text-align: center; padding: 40px; color: #4e5766; font-size: 0.8em; }
-
-        @media (max-width: 992px) {
-            .bio-wrapper { flex-direction: column; }
-            .social-buttons-container { flex-direction: column; align-items: center; }
-            .btn { width: 100%; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="teatro.html">Teatro</a>
         <a href="musica.html">Musica</a>
     </nav>
 
     <header>
         <h1>Nicola Auletta</h1>
-        <div class="subtitle">Songwriting • Stage Direction • Artistic Mentorship</div>
+        <h2>Compositore • Regista Teatrale • Formatore Artistico</h2>
     </header>
 
-    <div class="container">
-        <!-- SEZIONE BIOGRAFIA -->
-        <div class="content-block">
-            <div class="bio-wrapper">
-                <div class="bio-image-box">
-                    <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta">
+    <div>
+        <div>
+            <div>
+                <div>
+                    <img alt="Nicola Auletta" src="Nicola-auletta.jpg.JPEG">
                 </div>
-                <div class="bio-content">
-                    <div class="bio-block">
+                <div>
+                    <div>
                         <h2>Biografia</h2>
-                        <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica" presso l'Università degli Studi Suor Orsola Benincasa di Napoli.</p>
+                        <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Gestisce l'intero processo creativo musicale, dalla stesura dei testi all'arrangiamento, e dirige produzioni teatrali focalizzate sulla pedagogia delle arti sceniche. Ha conseguito con lode il Master in "Teatro, pedagogia e didattica" presso l'Università degli Studi Suor Orsola Benincasa di Napoli.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SEZIONE NUOVA RELEASE -->
-        <div class="content-block" style="text-align: center;">
+        <div>
             <h2>Ultima Release</h2>
             <p>Ascolta il nuovo Lyric Video ufficiale del brano <strong>"La teoría"</strong>.</p>
-            <div class="video-wrapper-vertical">
-                <div class="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/embed/IUh3m4t7E50" 
-                        title="Nicola Auletta - La teoría (Official Lyric Video)" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+            <div>
+                <div>
+                    </div>
             </div>
-            <div style="margin-top: 20px;">
-                <a href="https://youtube.com/shorts/IUh3m4t7E50" target="_blank" class="btn" style="min-width: 220px;">Apri su YouTube</a>
+            <div>
+                <a href="https://youtube.com/shorts/IUh3m4t7E50" target="_blank">Apri su YouTube</a>
             </div>
         </div>
 
-        <!-- SEZIONE ATTIVITÀ -->
-        <div class="grid">
-            <div class="card">
+        <div>
+            <div>
                 <h2>Composizione</h2>
                 <p>Creazione di opere inedite, curando testi e melodie per il mercato nazionale e internazionale.</p>
             </div>
-            <div class="card">
+            <div>
                 <h2>Regia</h2>
                 <p>Direzione teatrale focalizzata sulla pedagogia delle arti sceniche e la drammaturgia contemporanea.</p>
             </div>
-            <div class="card">
+            <div>
                 <h2>Formazione</h2>
                 <p>Masterclass e percorsi didattici dedicati all'interpretazione emotiva e alla presenza scenica per attori e cantanti.</p>
             </div>
         </div>
 
-        <!-- SEZIONE CONTATTI -->
-        <div class="content-block">
+        <div>
             <h2>Contatti & Social</h2>
             <p>Seguimi sui canali ufficiali per aggiornamenti, ascolti e collaborazioni.</p>
-            <div class="social-buttons-container">
-                <a href="mailto:pressnicoautore@gmail.com" class="btn">Invia Email</a>
-                <a href="https://www.instagram.com/aulettanico?igsh=MTRsM2JudnNrdXBrYw%3D%3D&utm_source=qr" target="_blank" class="btn">Instagram</a>
-                <a href="https://youtube.com/@nicolaauletta?si=D7oAkEvkCKfrsOJK" target="_blank" class="btn">YouTube</a>
-                <a href="https://music.amazon.it/artists/B0FDBJD6LJ/nicola-auletta?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_67sNYqUGbPnOTvedrYY6XkoR8" target="_blank" class="btn">Amazon Music</a>
+            <div>
+                <a href="mailto:pressnicoautore@gmail.com">Invia Email</a>
+                <a href="https://www.instagram.com/aulettanico?igsh=MTRsM2JudnNrdXBrYw%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                <a href="https://youtube.com/@nicolaauletta?si=D7oAkEvkCKfrsOJK" target="_blank">YouTube</a>
+                <a href="https://music.amazon.it/artists/B0FDBJD6LJ/nicola-auletta?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_67sNYqUGbPnOTvedrYY6XkoR8" target="_blank">Amazon Music</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Nicola Auletta. Tutti i diritti riservati.</p>
+        <p>© 2026 Nicola Auletta. Tutti i diritti riservati.</p>
     </footer>
 
 </body>
