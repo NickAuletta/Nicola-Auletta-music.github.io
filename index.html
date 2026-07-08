@@ -8,7 +8,7 @@
     <title>Nicola Auletta | Sito Ufficiale - Compositore, Autore e Regista</title>
     
     <!-- META TAG SEO STRATEGICI PER INDICIZZAZIONE IMMEDIATA -->
-    <meta name="description" content="Sito ufficiale di Nicola Auletta: compositore, autore musicale, regista teatrale and formatore accademico. Scopri le ultime release e produzioni teatrali.">
+    <meta name="description" content="Sito ufficiale di Nicola Auletta: compositore, autore musicale, regista teatrale e formatore accademico. Scopri le ultime release e produzioni teatrali.">
     <meta name="keywords" content="Nicola Auletta, Nicola Auletta musica, Nicola Auletta teatro, Nicola Auletta compositore, Nicola Auletta regista, Village Music Academy, La teoria">
     <meta name="author" content="Nicola Auletta">
     <meta name="robots" content="index, follow">
@@ -17,6 +17,105 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #161920; /* Sfondo Canna di Fucile */
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        /* Navigazione */
+        nav { background: #080a0d; text-align: center; padding: 20px 0; border-bottom: 1px solid #232b38; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: #ffffff; margin: 0 25px; text-decoration: none; font-weight: 500; font-size: 0.85em; letter-spacing: 2px; text-transform: uppercase; transition: color 0.3s; }
+        nav a.active, nav a:hover { color: #d4af37; }
+
+        header { background: #0d1015; padding: 80px 20px; text-align: center; border-bottom: 3px solid #d4af37; }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 3em; margin: 0; color: #d4af37; letter-spacing: 3px; text-transform: uppercase; }
+        header .subtitle { margin-top: 10px; color: #ffffff; letter-spacing: 4px; font-size: 0.8em; text-transform: uppercase; }
+
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 25px; }
+
+        /* Box Principali */
+        .content-block {
+            background: #1a1e26;
+            padding: 50px;
+            border-radius: 4px;
+            margin-bottom: 50px;
+            border-left: 3px solid #d4af37;
+            border: 1px solid #252b36;
+        }
+
+        .bio-wrapper { display: flex; gap: 40px; align-items: flex-start; }
+        .bio-image-box { flex: 0 0 280px; border: 1px solid #333; padding: 5px; background: #000; }
+        .bio-image-box img { width: 100%; display: block; }
+        
+        /* Contenitore Video Optimizzato per Verticale */
+        .video-wrapper-vertical {
+            max-width: 315px;
+            margin: 30px auto 0 auto;
+            border: 1px solid #252b36;
+            background: #0d1015;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 177.77%; /* Proporzione 9:16 */
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+        }
+
+        /* Titoli Oro */
+        h2 { font-family: 'Playfair Display', serif; color: #d4af37; font-size: 1.8em; margin-top: 0; border-bottom: 1px solid #2d3545; padding-bottom: 10px; }
+        
+        /* Testo Bianco */
+        p { color: #ffffff; font-size: 0.95em; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .card { background: #1a1e26; padding: 35px; border-radius: 4px; border: 1px solid #2d3545; border-left: 3px solid #d4af37; }
+        .card h2 { font-size: 1.4em; }
+
+        /* Pulsanti Oro Eleganti e Uniformati */
+        .social-buttons-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #d4af37;
+            color: #000000;
+            border: 2px solid #d4af37;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 0.8em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: all 0.3s;
+            min-width: 170px;
+        }
+        .btn:hover { background: transparent; color: #d4af37; }
+        
+        footer { text-align: center; padding: 40px; color: #4e5766; font-size: 0.8em; }
+
+        @media (max-width: 992px) {
+            .bio-wrapper { flex-direction: column; }
+            .social-buttons-container { flex-direction: column; align-items: center; }
+            .btn { width: 100%; }
+        }
+    </style>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18269208870"></script>
