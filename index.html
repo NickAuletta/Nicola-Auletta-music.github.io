@@ -39,28 +39,37 @@
 
         .container { max-width: 1000px; margin: 50px auto; padding: 0 25px; }
 
-        /* Box Principali */
-        .content-block {
+        /* Box Principale Link Totale */
+        .bio-global-link {
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            margin-bottom: 50px;
+        }
+
+        .content-block-link {
             background: #1a1e26;
             padding: 50px;
             border-radius: 4px;
-            margin-bottom: 50px;
             border-left: 3px solid #d4af37;
             border: 1px solid #252b36;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        
+        .bio-global-link:hover .content-block-link {
+            background: #1f242e;
+            border-color: #d4af37;
         }
 
         .bio-wrapper { display: flex; gap: 40px; align-items: flex-start; }
         
-        /* Link foto con effetto zoom leggero al passaggio del mouse */
-        .bio-link-image { flex: 0 0 280px; text-decoration: none; display: block; cursor: pointer; }
-        .bio-image-box { border: 1px solid #333; padding: 5px; background: #000; transition: transform 0.3s ease; }
-        .bio-image-box:hover { transform: scale(1.02); border-color: #d4af37; }
+        .bio-image-box { flex: 0 0 280px; border: 1px solid #333; padding: 5px; background: #000; transition: transform 0.3s ease; }
+        .bio-global-link:hover .bio-image-box { transform: scale(1.02); border-color: #d4af37; }
         .bio-image-box img { width: 100%; display: block; }
         
-        /* Stile link testo biografia */
-        .bio-text-link { text-decoration: none; color: #ffffff; display: block; transition: color 0.3s; cursor: pointer; }
-        .bio-text-link:hover h2 { color: #ffffff; }
-        .bio-text-link:hover p { color: #e0e0e0; }
+        .bio-content { flex: 1; }
+        .bio-content p { transition: color 0.3s; }
+        .bio-global-link:hover .bio-content p { color: #e0e0e0; }
 
         /* Contenitore Video Ottimizzato per Verticale */
         .video-wrapper-vertical {
@@ -88,7 +97,7 @@
         }
 
         /* Titoli Oro */
-        h2 { font-family: 'Playfair Display', serif; color: #d4af37; font-size: 1.8em; margin-top: 0; border-bottom: 1px solid #2d3545; padding-bottom: 10px; transition: color 0.3s; }
+        h2 { font-family: 'Playfair Display', serif; color: #d4af37; font-size: 1.8em; margin-top: 0; border-bottom: 1px solid #2d3545; padding-bottom: 10px; }
         
         /* Testo Bianco */
         p { color: #ffffff; font-size: 0.95em; }
@@ -121,7 +130,7 @@
 
         @media (max-width: 992px) {
             .bio-wrapper { flex-direction: column; }
-            .bio-link-image { flex: 0 0 auto; width: 100%; max-width: 280px; margin: 0 auto; }
+            .bio-image-box { flex: 0 0 auto; width: 100%; max-width: 280px; margin: 0 auto; }
             .social-buttons-container { flex-direction: column; align-items: center; }
             .btn { width: 100%; }
         }
@@ -151,26 +160,21 @@
     </header>
 
     <div class="container">
-        <!-- SEZIONE BIOGRAFIA REINSERITA E CON TUTTI I COLLEGAMENTI SICURI -->
-        <div class="content-block">
-            <div class="bio-wrapper">
-                <!-- Foto cliccabile con controllo di sicurezza dell'URL -->
-                <a onclick="location.href='Bio.html'" onerror="this.onclick=function(){location.href='bio.html'}" class="bio-link-image" title="Leggi la biografia completa">
+        
+        <!-- LINK REALE TOTALE DI SICUREZZA (PUNTA DIRETTAMENTE A Bio.html) -->
+        <a href="Bio.html" class="bio-global-link" title="Leggi la biografia completa ufficiale di Nicola Auletta">
+            <div class="content-block-link">
+                <div class="bio-wrapper">
                     <div class="bio-image-box">
                         <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta">
                     </div>
-                </a>
-                <!-- Testo cliccabile con controllo di sicurezza dell'URL -->
-                <div class="bio-content">
-                    <a onclick="location.href='Bio.html'" onerror="this.onclick=function(){location.href='bio.html'}" class="bio-text-link" title="Leggi la biografia completa">
-                        <div class="bio-block">
-                            <h2>Biografia</h2>
-                            <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Clicca qui per leggere il profilo artistico completo ufficiale.</p>
-                        </div>
-                    </a>
+                    <div class="bio-content">
+                        <h2>Biografia</h2>
+                        <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Clicca in un punto qualsiasi di questo riquadro o sulla foto per leggere il profilo artistico completo ufficiale.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
 
         <!-- SEZIONE NUOVA RELEASE -->
         <div class="content-block" style="text-align: center;">
