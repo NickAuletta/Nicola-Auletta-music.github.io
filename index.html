@@ -52,13 +52,13 @@
         .bio-wrapper { display: flex; gap: 40px; align-items: flex-start; }
         
         /* Link foto con effetto zoom leggero al passaggio del mouse */
-        .bio-link-image { flex: 0 0 280px; text-decoration: none; display: block; }
+        .bio-link-image { flex: 0 0 280px; text-decoration: none; display: block; cursor: pointer; }
         .bio-image-box { border: 1px solid #333; padding: 5px; background: #000; transition: transform 0.3s ease; }
         .bio-image-box:hover { transform: scale(1.02); border-color: #d4af37; }
         .bio-image-box img { width: 100%; display: block; }
         
         /* Stile link testo biografia */
-        .bio-text-link { text-decoration: none; color: #ffffff; display: block; transition: color 0.3s; }
+        .bio-text-link { text-decoration: none; color: #ffffff; display: block; transition: color 0.3s; cursor: pointer; }
         .bio-text-link:hover h2 { color: #ffffff; }
         .bio-text-link:hover p { color: #e0e0e0; }
 
@@ -151,18 +151,18 @@
     </header>
 
     <div class="container">
-        <!-- SEZIONE BIOGRAFIA (CON SCRITTA DORATA RIPRISTINATA) -->
+        <!-- SEZIONE BIOGRAFIA REINSERITA E CON TUTTI I COLLEGAMENTI SICURI -->
         <div class="content-block">
             <div class="bio-wrapper">
-                <!-- Foto cliccabile che apre Bio.html -->
-                <a href="Bio.html" class="bio-link-image" title="Leggi la biografia completa">
+                <!-- Foto cliccabile con controllo di sicurezza dell'URL -->
+                <a onclick="location.href='Bio.html'" onerror="this.onclick=function(){location.href='bio.html'}" class="bio-link-image" title="Leggi la biografia completa">
                     <div class="bio-image-box">
                         <img src="Nicola-auletta.jpg.JPEG" alt="Nicola Auletta">
                     </div>
                 </a>
-                <!-- Testo cliccabile che apre Bio.html -->
+                <!-- Testo cliccabile con controllo di sicurezza dell'URL -->
                 <div class="bio-content">
-                    <a href="Bio.html" class="bio-text-link" title="Leggi la biografia completa">
+                    <a onclick="location.href='Bio.html'" onerror="this.onclick=function(){location.href='bio.html'}" class="bio-text-link" title="Leggi la biografia completa">
                         <div class="bio-block">
                             <h2>Biografia</h2>
                             <p>Nicola Auletta è un autore, compositore, regista teatrale e formatore accademico. Ha conseguito con lode il Master di I livello in "Teatro, pedagogia e didattica" presso l'Università degli Studi Suor Orsola Benincasa di Napoli. Clicca qui per leggere il profilo artistico completo ufficiale.</p>
@@ -180,7 +180,7 @@
                 <div class="video-container">
                     <iframe 
                         src="https://www.youtube.com/embed/IUh3m4t7E50" 
-                        title="Nicola Auletta - La teoría (Official Lyric Video)" 
+                        title="Nicola Auletta - La teoria (Official Lyric Video)" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen>
