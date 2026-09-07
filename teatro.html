@@ -43,6 +43,45 @@
         .content-block h2 { font-family: 'Playfair Display', serif; font-size: 1.8em; margin-top: 0; color: #d4af37; border-bottom: 1px solid #2d3545; padding-bottom: 10px; }
         p { color: #ffffff; font-size: 0.95em; }
         
+        /* Stili per le Commedie e il Tasto Richiesta */
+        .commedia-item {
+            background: #0d1015;
+            border: 1px solid #252b36;
+            padding: 25px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+        .commedia-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .citazione {
+            font-style: italic;
+            color: #b0b8c4;
+            border-left: 2px solid #d4af37;
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+        .btn-richiesta {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #0d1015;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85em;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn-richiesta:hover {
+            background-color: #c5a028;
+        }
+
         /* Galleria Fotografica */
         .gallery-grid { 
             display: grid; 
@@ -94,6 +133,45 @@
             <h2>Esperienze Laboratoriali: Art Garage Pozzuoli</h2>
             <p>Sul piano prettamente registico e attoriale, un tassello fondamentale dello sviluppo professionale è rappresentato dall'intensa attività svolta presso i laboratori dell'<strong>Art Garage di Pozzuoli</strong>, sotto l'autorevole direzione artistica e pedagogica di <strong>Cetty Sommella</strong> e <strong>Nando Paone</strong>.</p>
             <p>In questo contesto si è perfezionata una linea di regia attiva e dinamica, attenta al ritmo drammaturgico, al movimento del corpo nello spazio scenico e all'intenzionalità interpretativa dell'attore.</p>
+        </div>
+
+        <!-- REPERTORIO COMMEDIE (AGGIUNTO) -->
+        <div class="content-block">
+            <h2>Repertorio Commedie & Spettacoli</h2>
+            <p>Spazi teatrali dedicati alle opere di drammaturgia firmate da Nicola Auletta.</p>
+            
+            <!-- Spazio 1 -->
+            <div class="commedia-item">
+                <h3>Il vizietto secondo me...</h3>
+                <p>Farsa brillante che affronta con ironia e lazzi di semplice comicità il tema dell'omosessualità e dei preconcetti di una famiglia altolocata della periferia di Napoli proprietaria di un albergo, conducendo a un finale liberatorio e inaspettato.</p>
+                <div class="citazione">"Quando Dio ha creato l’uomo non ha detto il maschio deve amare la femmina ma ha detto amate."</div>
+            </div>
+
+            <!-- Spazio 2 -->
+            <div class="commedia-item">
+                <h3>I contrabbandieri commedia musicale</h3>
+                <p>Commedia musicale ambientata nel cuore di una vivace e popolare piazza di Napoli, unendo il ritmo travolgente della musica e della tradizione a una storia intensa di riscatto, contrabbando e dinamiche di quartiere.</p>
+                <div class="citazione">"Pecchè a Napule è mestiere, a vita è nu contrabbandiere."</div>
+            </div>
+
+            <!-- Spazio 3 -->
+            <div class="commedia-item">
+                <h3>5 minuti (Storia di tre giovani donne)</h3>
+                <p>Dramma sociale contemporaneo incentrato sulla vita di tre studentesse universitarie, esplorando le loro speranze, la complicità e le difficoltà quotidiane fino alla cruda e drammatica realtà della violenza di genere e del femminicidio.</p>
+                <div class="citazione">"Noi non siamo e non saremo mai più per cinque minuti, solo per “cinque inutili minuti”."</div>
+            </div>
+
+            <!-- Spazio 4 -->
+            <div class="commedia-item">
+                <h3>Se n'grifato o' Munaciello</h3>
+                <p>Commedia brillante e farsa popolare natalizia ambientata in una sacrestia, tra equivoci esilaranti, personaggi tipici della tradizione, confessioni e leggende popolari sullo sfondo delle festività natalizie.</p>
+                <div class="citazione">"La vita è un gioco fatto di magia, e a chi non sa accettare la diversità, la fede e l'amore insegnano a sperare."</div>
+            </div>
+
+            <!-- Tasto di Richiesta Testi -->
+            <div style="text-align: center; margin-top: 35px;">
+                <a href="mailto:tuamail@dominio.it?subject=Richiesta%20Testi%20Teatrali%20-%20Nicola%20Auletta" class="btn-richiesta">Richiedi i testi per la messa in scena</a>
+            </div>
         </div>
 
         <!-- GALLERIA SCENICA -->
